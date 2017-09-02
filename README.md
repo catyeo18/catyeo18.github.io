@@ -1,2 +1,2 @@
-# catyeo18.github.io
-Personal website
+# shreyashankar.github.io
+My Personal Website
