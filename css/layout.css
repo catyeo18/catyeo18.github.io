@@ -34,7 +34,7 @@ header {
    min-height: 500px;
    width: 100%;
    background: #161415 url(../images/header-background.jpg) no-repeat top center;
-   background-color: rgba(0,0,0,0.5); /* tint */
+   background-color: rgba(20,0,0,0.5); /* tint */
    background-blend-mode: multiply;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
