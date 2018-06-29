@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background-1.jpg) no-repeat top center;
    background-color: rgba(20,0,0,0.5); /* tint */
    background-blend-mode: multiply;
    background-size: cover !important;
