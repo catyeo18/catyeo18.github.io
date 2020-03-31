@@ -19,6 +19,9 @@ function open() {
 		letter.classList.remove("letterClose");
 		letter.style.zIndex = "7";
 	}, 400);
+	setTimeout(function () {
+		revealLetter();
+	}, 1000);
 }
 
 // close
@@ -30,4 +33,10 @@ function close() {
 		flip.classList.add("close");
 		letter.style.zIndex = "5";
 	}, 300);
+}
+
+// reveal handwritten letter image
+function revealLetter() {
+	let letterImg = document.getElementById("letter_img")
+	letterImg.style.visibility = "visible";
 }
