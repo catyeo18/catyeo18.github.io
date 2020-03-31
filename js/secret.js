@@ -20,8 +20,11 @@ function open() {
 		letter.style.zIndex = "7";
 	}, 400);
 	setTimeout(function () {
+		hideEnvelope();
+	}, 2000);
+	setTimeout(function () {
 		revealLetter();
-	}, 1000);
+	}, 3500);
 }
 
 // close
@@ -35,8 +38,15 @@ function close() {
 	}, 300);
 }
 
+// hide envelope and buttons
+function hideEnvelope() {
+	document.getElementById("container").style.visibility = "hidden";
+	document.getElementById("open").style.visibility = "hidden";
+	document.getElementById("close").style.visibility = "hidden";
+}
+
 // reveal handwritten letter image
 function revealLetter() {
-	let letterImg = document.getElementById("letter_img")
-	letterImg.style.visibility = "visible";
+	document.getElementById("letter_img").style.visibility = "visible";
+	// document.getElementById("preletter").style.visibility = "visible";
 }
