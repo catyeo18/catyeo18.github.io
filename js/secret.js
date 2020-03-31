@@ -1,4 +1,6 @@
 window.onload = function() {
+	passWord();
+
  	// variables
 	let flip = document.getElementById("flip");
 	let letter = document.getElementById("letter");
@@ -7,7 +9,31 @@ window.onload = function() {
 
 	// listener
 	btnOpen.addEventListener("click", open);
-	btnClose.addEventListener("click", close);
+	// btnClose.addEventListener("click", close);
+}
+
+function revealAll() {
+	document.getElementById("all").style.visibility = "visible";
+}
+
+function passWord() {
+	var testV = 1;
+	var pass1 = prompt('Your Favorite Bears','');
+	while (testV < 3) {
+		if (!pass1)
+			history.go(-1);
+		if (pass1.toLowerCase() == "milkandmocha") {
+			alert('<333');
+			revealAll();
+			break;
+		}
+		testV+=1;
+		var pass1 =
+		prompt('This is not the password you are looking for','Your Favorite Bears');
+	}
+	if (pass1.toLowerCase()!="password" & testV ==3)
+		history.go(-1);
+	return "";
 }
 
 // open
