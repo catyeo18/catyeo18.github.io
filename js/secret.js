@@ -22,7 +22,7 @@ function passWord() {
 	while (testV < 3) {
 		if (!pass1)
 			history.go(-1);
-		if (pass1.toLowerCase() == "milkandmocha" || pass1.toLowerCase() == "milk_and_mocha") {
+		if (pass1.toLowerCase() == "milkandmocha" || pass1.toLowerCase() == "milk and mocha" || pass1.toLowerCase() == "milk_and_mocha") {
 			alert('<333');
 			revealAll();
 			break;
