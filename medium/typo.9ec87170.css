@@ -98,7 +98,7 @@ code {
       -ms-grid-columns: auto 166px 740px 166px auto;
       grid-template-columns: auto 166px 740px 166px auto;
       -ms-grid-rows: 450px auto 150px;
-      grid-template-rows: 450px auto 150px;
+      /*grid-template-rows: 450px auto 150px;*/
       grid-template-areas:
     ". img img img ."
     ". . article . ."
