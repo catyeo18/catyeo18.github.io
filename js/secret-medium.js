@@ -18,7 +18,7 @@ function revealAll() {
 
 function passWord() {
 	var testV = 1;
-	var pass1 = prompt('Your Favorite Bears','');
+	var pass1 = prompt('Your Favorite Snowman','');
 	while (testV < 3) {
 		if (!pass1)
 			history.go(-1);
@@ -29,7 +29,7 @@ function passWord() {
 		}
 		testV+=1;
 		var pass1 =
-		prompt('This is not the password you are looking for','Your Favorite Bears');
+		prompt('This is not the password you are looking for','Your Favorite Snowman');
 	}
 	if (pass1.toLowerCase()!="password" & testV ==3)
 		history.go(-1);
