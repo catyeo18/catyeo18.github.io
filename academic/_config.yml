@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 name: Catherine Yeo
 email: cyeo [at] college.harvard.edu
-description: 
+description: Personal website of Catherine Yeo.
 footer_text: 
 
 url:  # the base hostname & protocol for your site
@@ -97,7 +97,7 @@ plugins:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Einstein
+  last_name: Yeo
 
   style: apa
   locale: en
