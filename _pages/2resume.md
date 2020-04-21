@@ -7,17 +7,19 @@ description:
 
 ### Education
 
-#### Harvard University • B.A. and M.S. in Computer Science • 2018 - 2022
+#### Harvard University 
+**B.A./M.S. in Computer Science** • 2018 - 2022 • Cambridge, MA
 - **Relevant coursework**: Data Structures & Algorithms (Teaching Fellow), Machine Learning, Supervised Research, Functional Programming, Network and Computer Security (Grad Level), Fairness & Differential Privacy (Grad Level) 
   - Full coursework can be found [here](/courses)
 - **Activities and societies**: HackHarvard (Director), Tuesday Literary Magazine (Board Member), Harvard Undergraduate Math Association (Board Member)
 - **Member**: Women in Computer Science, Harvard Computer Society
 
-#### Stanford Online High School • 2016 - 2018
+<!-- #### Stanford Online High School 
+2016 - 2018
 
 #### Stanford AI4ALL • August 2015
 - 1 of 24 students selected worldwide, full tuition paid for all participants in 2015.
-- Utilized natural-language processing to aid disaster relief, specifically categorizing tweets from Hurricane Sandy into those asking for help and those providing help. 
+- Utilized natural-language processing to aid disaster relief, specifically categorizing tweets from Hurricane Sandy into those asking for help and those providing help.  -->
 
 ---
 
@@ -27,7 +29,7 @@ description:
 **Research Assistant** (HCI + NLP) • September 2019 to Present • Cambridge, MA
 - Member of the Internet Policy Research Initiative, supervised by Professor [Hal Abelson](http://groups.csail.mit.edu/mac/users/hal/hal.html).
 - Design & build a conversational programming agent, used to make CS & programming education more accessible. 1 paper co-authored.
-- Implement and integrate a Q&A extension using a BERT pretrained Tensorflow model.
+- Tools & technologies: Python, Tensorflow, BERT, Flask, Javascript (Node.js).
 
 #### Apple
 **Software Engineering Intern** (Xcode) • May 2019 to August 2019 • Cupertino, CA
@@ -55,33 +57,35 @@ description:
 
 #### Fairness for Natural Language Generation
 Feb 2020 to Present • Cambridge, MA
-
-Designed and constructed a mathematical framework of fairness for natural language generation and applied it to evaluating NLG models (GPT-2, XLNet, etc.) using word embeddings.
+- Designed and constructed a mathematical framework of fairness for natural language generation and applied it to evaluating NLG models (GPT-2, XLNet, etc.) using word embeddings.
+- Tools & technologies: Python, Tensorflow, Keras, Numpy, PyTorch-Transformers.
 
 #### SafePlates
 November 2018 to December 2018 • Cambridge, MA
-
-Created with Hannah C. for Harvard's CS50 Final Project. Safeplates is a web app that outputs restaurant recommendations based on a user's inputted dietary restrictions and location using Python (Flask, Selenium, Beautiful Soup), HTML, CSS, & Javascript.
+- Developed web app that outputs restaurant recommendations based on a user's inputted dietary restrictions and location. 
+- Tools & technologies: Python, Flask, Selenium, BeautifulSoup, Javascript, HTML/CSS.
 
 #### Applying Reinforcement Learning to Creating a Math Teacher AI
 February 2018 to June 2018 • Oakland, CA
-
-Built a platform that uses reinforcement learning to create automated teachers for math problems by training AI students. This platform involved a multi-AI system, with a recurrent neural network (RNN) based student AI and reinforcement learning based teacher AI. Sponsored by AI4ALL Research Fellowship.
+- Built a platform that uses reinforcement learning to create automated teachers for math problems by training AI students. This platform involved a multi-AI system, with a recurrent neural network (RNN) based student AI and reinforcement learning based teacher AI. 
+- Sponsored by AI4ALL Research Fellowship.
+- Tools & technologies: Python, Tensorflow, Keras, Numpy.
 
 #### Saluton: Foreign Language Chatbot
 March 2017 • Fremont, CA
-
-Created with Eileen P., Katherine M., and Karina H. Saluton is a chatbot that helps individuals learn foreign languages through conversational learning; it is deployed on Facebook Messenger and coded using Javascript, Gupshup, and Google Translate's API (along with some application of natural language processing). Won Second Place Overall at HSHacks, the largest high school hackathon in the world.
+- Developed Facebook Messenger chatbot that helps individuals learn foreign languages through conversational learning.
+- Won Second Place award at HSHacks, the largest high school hackathon in the world.
+- Tools & technologies: Javascript, Google Translate API.
 
 #### Letter Pop
 March 2014 to June 2016 • San Jose, CA
-
-Letter Pop is an iOS and Android word game in which there are letters on balloons and you pop the balloons to spell out valid words. The goal of this game is to improve users' spelling and vocabulary. Taught self Swift and Xcode in creating this app.
+- Created iOS educational game to help teach children spelling & vocabulary. In the game, there are letters on balloons and you pop the balloons to spell out valid words. 
+- Tools & technologies: Swift, Xcode.
 
 #### Categorizing Hurricane Sandy Tweets Using Natural Language Processing
 August 2015 • Stanford, CA
-
-Utilized natural-language processing to aid disaster relief, specifically categorizing tweets from Hurricane Sandy into those asking for help and those providing help. Coded in Python, employing a Bayesian model.
+- Utilized natural-language processing (Bayesian model) to aid disaster relief, specifically categorizing tweets from Hurricane Sandy into those asking for help and those providing help.
+- Tools & technologies: Python.
 
 ---
 
