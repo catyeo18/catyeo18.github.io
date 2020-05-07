@@ -103,7 +103,7 @@ ins {
 
 mark {
    background-color: #A7F4F6;
-   color: #555;
+   color: #000;
 }
 
 del { text-decoration: line-through; }
@@ -147,7 +147,7 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+	color: #000;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
