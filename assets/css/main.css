@@ -95,7 +95,7 @@ h6, .h6 { font-size: 0.75rem; }
 
 .list-reset { list-style: none; padding-left: 0; }
 
-.button-blue { color: white; background-color: #B509AC; border-radius: 3px; transition-duration: .1s; transition-timing-function: ease-out; transition-property: box-shadow, background-color; }
+.button-blue { color: white; background-color: #484bcf; border-radius: 3px; transition-duration: .1s; transition-timing-function: ease-out; transition-property: box-shadow, background-color; }
 
 .button-blue:hover { opacity: .875; }
 
@@ -107,7 +107,7 @@ h6, .h6 { font-size: 0.75rem; }
 
 .highlight { -webkit-text-size-adjust: none; }
 
-.highlight .c, .highlight .cs, .highlight .cm, .highlight .cp, .highlight .c1 { color: #666; font-style: italic; }
+.highlight .c, .highlight .cs, .highlight .cm, .highlight .cp, .highlight .c1 { color: #000; font-style: italic; }
 
 .highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kr, .highlight .kt, .highlight .kp { color: #00369f; }
 
@@ -133,7 +133,7 @@ h6, .h6 { font-size: 0.75rem; }
 
 .hljs-built_in { color: #00369f; }
 
-.hljs-preprocessor, .hljs-pragma, .hljs-pi, .hljs-doctype, .hljs-shebang, .hljs-cdata { color: #666; font-weight: bold; }
+.hljs-preprocessor, .hljs-pragma, .hljs-pi, .hljs-doctype, .hljs-shebang, .hljs-cdata { color: #000; font-weight: bold; }
 
 .hljs-deletion { background: #ffdddd; }
 
@@ -144,9 +144,9 @@ h6, .h6 { font-size: 0.75rem; }
 .hljs-chunk { color: #ccc; }
 
 /* Basscss Color Base */
-body { color: #333; background-color: white; }
+body { color: #000; background-color: white; }
 
-a { color: #B509AC; text-decoration: none; }
+a { color: #484bcf; text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
@@ -155,7 +155,7 @@ pre, code { background-color: #eee; border-radius: 3px; }
 hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #ccc; }
 
 /* Basscss Colors */
-.dark-gray { color: #333; }
+.dark-gray { color: #000; }
 
 .white { color: white; }
 
@@ -175,17 +175,17 @@ hr { border: 0; border-bottom-style: solid; border-bottom-width: 1px; border-bot
 
 .orange { color: #F29105; }
 
-.bg-dark-gray { background-color: #333; }
+.bg-dark-gray { background-color: #000; }
 
 .bg-white { background-color: white; }
 
 .bg-blue { background-color: #2698BA; }
 
-.bg-mid-gray { background-color: #666; }
+.bg-mid-gray { background-color: #333; }
 
-.bg-light-gray { background-color: #ccc; }
+.bg-light-gray { background-color: #666; }
 
-.bg-lighter-gray { background-color: #eee; }
+.bg-lighter-gray { background-color: #ccc; }
 
 .bg-red { background-color: #FF3636; }
 
@@ -366,7 +366,7 @@ body { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: 
 
 footer { background-color: #424242; border-top: thin solid #424242; color: #ccc; font-size: 0.75rem; font-weight: 300; padding: 0.5rem; position: fixed; left: 0px; bottom: 0px; width: 100%; }
 footer a { color: #fff; }
-footer a:hover { color: #B509AC; }
+footer a:hover { color: #484bcf; }
 
 .page-content { padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
 
@@ -423,7 +423,7 @@ footer a:hover { color: #B509AC; }
 
 .pagination .pagination-meta { overflow: hidden; }
 
-.pagination a:hover, .pagination a:focus { background: white; color: #B509AC; }
+.pagination a:hover, .pagination a:focus { background: white; color: #484bcf; }
 
 .pagination a:active { background: #f7f7f7; }
 
@@ -433,7 +433,7 @@ footer a:hover { color: #B509AC; }
 
 .button-disabled:hover, .button-disabled:active, .button-disabled:focus { cursor: not-allowed; background-color: #999; }
 
-.publications h2 { color: #B509AC; font-size: 32px; margin-bottom: 30px; text-align: center; }
+.publications h2 { color: #484bcf; font-size: 32px; margin-bottom: 30px; text-align: center; }
 
 .year { border-top: 1px solid #ccc; color: #ccc; margin: 0 -3em -2.5ex -2em; padding-top: 1ex; text-align: right; }
 
@@ -441,7 +441,7 @@ footer a:hover { color: #B509AC; }
 .bibliography li { margin: 10px 0; position: relative; }
 .bibliography li span { display: block; }
 .bibliography li .title { font-weight: bolder; }
-.bibliography li .author a { border-bottom: 1px dashed #B509AC; }
+.bibliography li .author a { border-bottom: 1px dashed #484bcf; }
 .bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
 .bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
 .bibliography li a.abstract, .bibliography li a.bibtex { cursor: pointer; }
@@ -453,7 +453,7 @@ footer a:hover { color: #B509AC; }
 .bibliography li span.abstract.hidden.open { border-color: #828282; }
 .bibliography abbr { position: absolute; left: -7em; }
 
-.star { color: #B509AC; font-style: normal; }
+.star { color: #484bcf; font-style: normal; }
 
 blockquote { border-left: 5px solid #7a7a7a; font-style: italic; margin-left: 0.5rem; padding: 0.5rem; }
 
@@ -485,7 +485,7 @@ figure > img { display: block; }
 
 figcaption { font-size: 0.875rem; }
 
-.blankbox { background: #B509AC; }
+.blankbox { background: #484bcf; }
 
 .img_row { /*height: $img-height;*/ width: 100%; overflow: hidden; box-sizing: border-box; }
 
@@ -503,14 +503,14 @@ figcaption { font-size: 0.875rem; }
 
 .gist .lines { width: 100%; }
 
-a { color: #666; text-decoration: none; }
-a:hover { color: #B509AC; text-decoration: none; }
+a { color: #000; text-decoration: none; }
+a:hover { color: #484bcf; text-decoration: none; }
 
-article a, .news a { color: #B509AC; font-weight: 100; }
+article a, .news a { color: #484bcf; font-weight: 100; }
 article a:hover, .news a:hover { text-decoration: underline; }
 
-.social a { color: #666; }
-.social a:hover { color: #B509AC; }
+.social a { color: #000; }
+.social a:hover { color: #484bcf; }
 
 .measure { margin: 0 auto; max-width: 42rem; }
 
@@ -534,11 +534,11 @@ table > tbody + tbody { border-top: 2px solid #333; }
 
 html { font-size: 16px; }
 
-body { color: #666; font-weight: 100; }
+body { color: #000; font-weight: 100; }
 
 abbr { border-bottom: 1px black dotted; cursor: help; }
 
-p { color: #333; line-height: 1.5; }
+p { color: #000; line-height: 1.5; }
 
 small, .small { font-size: 0.707rem; }
 
