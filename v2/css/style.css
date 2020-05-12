@@ -27,6 +27,12 @@ h4, h5, h6 {
     /*color: #222222;*/
     font-weight: 100;
 }
+/*a {
+    color: #1300bd;
+}*/
+.page-header-main {
+    padding-top: 50px; 
+}
 .resume-header {
     font-family: 'Nunito Sans', sans-serif;
     color: #1300bd;
@@ -44,6 +50,12 @@ date {
 
 heavy {
     font-weight:900;
+}
+
+@media (max-width:991px) {
+  #optional {
+    display: none;
+  }
 }
 
 
