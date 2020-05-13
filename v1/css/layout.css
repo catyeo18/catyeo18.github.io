@@ -205,7 +205,7 @@ ul#nav li.current a { color: #11ABB0; } /*here fam*/
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #f5f5ed;
 }
 #about .profile-pic {
    position: relative;
@@ -270,7 +270,7 @@ ul#nav li.current a { color: #11ABB0; } /*here fam*/
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: #000;
    margin-bottom: 18px;
    margin-top: 9px;
 }
