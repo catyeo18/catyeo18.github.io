@@ -24,49 +24,60 @@
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Overriding personal style -->
     <link href="css/style.css" rel="stylesheet">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  -->
 
   <script type="text/javascript">
-   function visibility_on(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-   }
-   function visibility_off(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-   }
-   function toggle_visibility(id) {
-       var e = document.getElementById(id+"_text");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-       var e = document.getElementById(id+"_img");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-   }
-   function toggle_vis(id) {
-       var e = document.getElementById(id);
-       if (e.style.display == 'none')
-           e.style.display = 'inline';
-       else
-           e.style.display = 'none';
-   }
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
 </script>
   
   </head>
 
-  <body>
+  <body onload="filterSelection('all');">
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -96,17 +107,29 @@
       <font size="3">
 
         <p>I started a Medium publication <a href="http://fairbytes.org/">Fair Bytes</a> to share short (byte-sized) pieces about research and resources related to fairness and ethics of AI. I also like to write fiction and occasionally blog about school, writing, and life.</p>
-        <hr>
 
-        <h4>
-          <a href="https://medium.com/fair-bytes/new-way-to-measure-crowdsourcing-bias-in-machine-learning-8a7c736649d1">
-          New Way to Measure Crowdsourcing Bias in Machine Learning
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>June 17, 2020</p>
-        <hr>
+        <div id="myBtnContainer">
+          <button class="btn" onclick="filterSelection('all')"> Show All</button>
+          <button class="btn" onclick="filterSelection('tech')"> AI/Tech </button>
+          <button class="btn" onclick="filterSelection('resources')"> Resources </button>
+          <button class="btn" onclick="filterSelection('fiction')"> Fiction </button>
+          <button class="btn" onclick="filterSelection('opinion')"> Opinion </button>
+        </div>
 
+        <div class="container">
+        <hr>
+        <div class="filterDiv tech">
+          <h4>
+            <a href="https://medium.com/fair-bytes/new-way-to-measure-crowdsourcing-bias-in-machine-learning-8a7c736649d1">
+            New Way to Measure Crowdsourcing Bias in Machine Learning
+            </a>
+          </h4>
+          <p><i>Fair Bytes</i> • AI/Tech </p>
+          <p>June 17, 2020</p>
+          <hr>
+        </div>
+
+        <div class="filterDiv tech resources">
         <h4>
           <a href="https://medium.com/fair-bytes/why-we-need-ai-literacy-716d5a63ecc3">
           Why We Need AI Literacy
@@ -115,7 +138,9 @@
         <p><i>Fair Bytes</i> • AI/Tech </p>
         <p>June 3, 2020</p>
         <hr>
+        </div>
 
+        <div class="filterDiv tech">
         <h4>
           <a href="https://medium.com/fair-bytes/how-biased-is-gpt-3-5b2b91f1177">
           How Biased is GPT-3?
@@ -124,7 +149,9 @@
         <p><i>Fair Bytes</i> • AI/Tech </p>
         <p>June 3, 2020</p>
         <hr>
+        </div>
 
+        <div class="filterDiv tech resources">
         <h4>
           <a href="https://medium.com/fair-bytes/best-resources-to-teach-ai-ethics-in-the-k-12-classroom-a801e00839d5">
           Best K-12 Resources to Teach AI Ethics
@@ -133,7 +160,9 @@
         <p><i>Fair Bytes</i> • AI/Tech </p>
         <p>May 27, 2020</p>
         <hr>
+        </div>
 
+        <div class="filterDiv tech">
         <h4>
           <a href="https://medium.com/fair-bytes/what-is-transparency-in-ai-bd08b2e901ac">
           What is Transparency in AI?
@@ -142,7 +171,9 @@
         <p><i>Fair Bytes</i> • AI/Tech </p>
         <p>May 20, 2020</p>
         <hr>
+        </div>
 
+        <div class="filterDiv tech">
         <h4>
           <a href="https://medium.com/fair-bytes/nlp-bias-against-people-with-disabilities-bf13bda66a8e">
           NLP Bias Against People with Disabilities
@@ -150,8 +181,9 @@
         </h4>
         <p><i>Fair Bytes</i> • AI/Tech </p>
         <p>May 13, 2020</p>
-        <hr>
+        <hr></div>
 
+        <div class="filterDiv tech">
         <h4>
           <a href="https://medium.com/fair-bytes/fair-bytes-a-deeper-lens-into-fairness-in-ai-6b956ca24771">
           Fair Bytes: A Deeper Lens into Fairness in AI
@@ -160,7 +192,9 @@
         <p><i>Fair Bytes</i> • AI/Tech </p>
         <p>May 5, 2020</p>
         <hr>
+        </div>
 
+        <div class="filterDiv opinion">
         <h4>
           <a href="https://www.thecrimson.com/article/2020/3/31/yeo-my-return-to-online-school/">
           All the Blue Light We Cannot See: My Return to Online School
@@ -169,7 +203,9 @@
         <p><i>The Harvard Crimson</i> • Op-Ed </p>
         <p>Mar 31, 2020</p>
         <hr>
+        </div>
 
+        <div class="filterDiv fiction">
         <h4>
           <a href="https://harvardtechnologyreview.com/2020/01/27/night-and-day/">
           Night and Day
@@ -178,17 +214,19 @@
         <p><i>Harvard Tech Review</i> • Science Fiction </p>
         <p>Jan 27, 2020</p>
         <hr>
+        </div>
+
+      </div>
 
       </font>
     </div>
 
 
     <!-- Bootstrap core JavaScript
-	 ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+   ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
