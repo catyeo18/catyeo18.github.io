@@ -25,6 +25,52 @@
   <link rel="apple-touch-icon" type="image/png" href="/img/profile2018.png">
   <link rel="canonical" href="http://catherineyeo.tech">
 
+  <script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-106123370-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
 </head>
 
 
@@ -585,7 +631,60 @@
 
   </section>
 
-  
+
+  <section id=press class="home-section wg-accomplishments">
+    <div class=container>
+      <div class=row>
+        <div class="col-12 col-lg-4 section-heading">
+          <h1>Awards & Press</h1>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="card experience course">
+            <div class=card-body>
+              <h4 class="card-title exp-title text-muted my-0">Awards</h4>
+              <div class=card-text>
+                • Special Commendation for Extraordinary Teaching (2020) <br>
+                • Rewriting the Code Fellowship (2020) <br>
+                • NCWIT Change Leader Scholarship (2020)<br>
+                • Harvard SEAS Grace Hopper Celebration Scholarship (2019)<br>
+                • Palantir Women in Technology Scholarship (2019)<br>
+                • Raytheon-FIRST Robotics Scholarship (2018)<br>
+                • AI4ALL Future Leader in AI Research Fellowship (2018, 2019)<br>
+                • She++ #include Fellow (2017)<br>
+                • Spirit of Ramanujan Global Math Talent Search Fellowship (2017)<br>
+                • Apple WWDC Scholarship (2016)<br>
+                • NCWIT Aspirations in Computing Bay Area Winner (2016)<br>
+                • NCWIT Aspirations in Computing National Honorable Mention (2015-17)
+              </div>
+            </div>
+          </div>
+
+          <div class="card experience course">
+            <div class=card-body>
+              <h4 class="card-title exp-title text-muted my-0">In the Media</h4>
+              <div class=card-text>
+                • AI For Anyone (2020): <a href = "https://aiforanyone.org/blog/all/blog/fair-bytes-algorithmic-fairness-and-ethics-in-ai">Fair Bytes: Algorithmic Fairness and Ethics in AI </a> <br>
+                • Teen Vogue (2018): <a href = "https://www.teenvogue.com/story/catherine-yeo-pixelhacks-hackathon-interview">This 16-Year-Old Started Her Own Hackathon for Girls in STEM </a> <br>
+                • Mogul (2017): <a href = "https://onmogul.com/stories/50-high-schoolers-you-need-to-know">50 High School Students You Need to Know About </a> <br>
+                • Expii (2016): <a href = "http://blog.expii.com/2016/05/03/top-score-tuesday-catherine-yeo/">Top Score Tuesday: Catherine Yeo </a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="card experience course">
+            <div class=card-body>
+              <h4 class="card-title exp-title text-muted my-0">Talks</h4>
+              <div class=card-text>
+                • MLH HackCon (2020): Lightning talk speaker for "Beyond the Stats: Promoting Diversity & Retention Behind the Scenes" <br>
+                • AI4ALL (2020): Invited speaker on fairness in language generation research <br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
   
   
   <section id="publications" class="home-section">
@@ -597,413 +696,63 @@
     </div>
 
     <div class="col-12 col-lg-8">
-    
 
-    
-      
+    <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <div class="media-body">
+
+        <h3 class="article-title mb-0 mt-0" itemprop="name">
+          Defining and Evaluating Fair Natural Language Generation
+        </h3>
+        <div class="article-style" itemprop="articleBody">
+          <b>Catherine Yeo</b>, Alyssa Chen <br>
+          Proceedings of the The Fourth Widening Natural Language Processing Workshop at ACL (Association for Computational Linguistics) 2020
+        </div>
+
         
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/coman8/publication/textnormalization/" itemprop="url">Neural Text Normalization with Subword Units</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/courtney-mansfield/">Catherine Yeo</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/ming-sun/">Ming Sun</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/yuzong-liu/">Yuzong Liu</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/ankur-gandhe/">Ankur Gandhe</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/bjoern-hoffmeister/">Bjoern Hoffmeister</a></span></span>
-  
-
-
-
+        <div class="btn-links">
+          <a href="javascript:toggle_vis('abstract-nlg')" class="btn btn-outline-primary my-1 mr-1 btn-sm">abstract</a>
+          <a href="files/Fair_NLG_ACL.pdf" class="btn btn-outline-primary my-1 mr-1 btn-sm">PDF</a>
+          <a href="https://slideslive.com/38929566/defining-and-evaluating-fair-natural-language-generation" class="btn btn-outline-primary my-1 mr-1 btn-sm">Talk</a>
+          <a href="https://www.aclweb.org/anthology/2020.winlp-1.27/" class="btn btn-outline-primary my-1 mr-1 btn-sm">ACL Anthology</a>
+          <br><br>
+          <div id="abstract-nlg" style="display:none">
+            <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
+              Our work focuses on the biases that emerge in the natural language generation (NLG) task of sentence completion. In particular, we introduce a mathematical framework of fairness for NLG followed by an evaluation of gender biases in two state-of-the-art language models, GPT-2 and XLNet. Our analysis provides a theoretical formulation for defining biases in NLG and empirical evidence that existing language generation models embed gender bias.
+            </font></blockquote>
+          </div>
+        </div>
       </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
 
+  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+      <div class="media-body">
 
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
+        <h3 class="article-title mb-0 mt-0" itemprop="name">
+          Defining and Evaluating Fair Natural Language Generation
+        </h3>
+        <div class="article-style" itemprop="articleBody">
+          <b>Catherine Yeo</b>, Alyssa Chen <br>
+          Proceedings of the The Fourth Widening Natural Language Processing Workshop at ACL (Association for Computational Linguistics) 2020
+        </div>
 
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/coman8/publication/phonationtypes/" itemprop="url">Voice quality types and uses in North American English</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
         
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/richard-wright/">Richard Wright</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/courtney-mansfield/">Catherine Yeo</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/laura-panfili/">Laura Panfili</a></span></span>
-  
-
-
-
+        <div class="btn-links">
+          <a href="javascript:toggle_vis('abstract-nlg')" class="btn btn-outline-primary my-1 mr-1 btn-sm">abstract</a>
+          <a href="files/Fair_NLG_ACL.pdf" class="btn btn-outline-primary my-1 mr-1 btn-sm">PDF</a>
+          <a href="https://slideslive.com/38929566/defining-and-evaluating-fair-natural-language-generation" class="btn btn-outline-primary my-1 mr-1 btn-sm">Talk</a>
+          <a href="https://www.aclweb.org/anthology/2020.winlp-1.27/" class="btn btn-outline-primary my-1 mr-1 btn-sm">ACL Anthology</a>
+          <br><br>
+          <div id="abstract-nlg" style="display:none">
+            <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
+              Our work focuses on the biases that emerge in the natural language generation (NLG) task of sentence completion. In particular, we introduce a mathematical framework of fairness for NLG followed by an evaluation of gender biases in two state-of-the-art language models, GPT-2 and XLNet. Our analysis provides a theoretical formulation for defining biases in NLG and empirical evidence that existing language generation models embed gender bias.
+            </font></blockquote>
+          </div>
+        </div>
       </div>
-      
     </div>
 
-    
-    <div class="btn-links">
-
-    </div>
-    
-
   </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/coman8/publication/surprisalcsss/" itemprop="url">We&#39;re Not Surprised You Didn&#39;t Notice That: Linguistic Surprisal and Misperception in Conversation</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      In this study, we examine factors that lead to the misperception of speech in conversational speech transcription, an area which has …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/courtney-mansfield/">Catherine Yeo</a></span></span>, 
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/richard-wright/">Richard Wright</a></span></span>
-  
-
-
-
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-      
-        
-
-
-
-
-
-
-
-  
-  
-  
-
-
-
-
-
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/coman8/publication/entrainment/" itemprop="url">The Entrainment of Creaky Voice in a Conversational Corpus</a>
-    </h3>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/courtney-mansfield/">Catherine Yeo</a></span></span>
-  
-
-
-
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-<div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0" itemprop="name">
-      <a href="/coman8/publication/uwieee/" itemprop="url">An Introduction to the UW/NU IEEE Corpus</a>
-    </h3>
-
-    
-    <div class="article-style" itemprop="articleBody">
-      An introduction to the UW/NU Corpus Version 2.0 which contains recordings of Pacific Northwest and Northern Cities speakers reading a …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div itemprop="author">
-        
-
-
-
-  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">
-        
-
-      
-      
-      <a href="/coman8/authors/courtney-mansfield/">Catherine Yeo</a></span></span>
-  
-
-
-
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://depts.washington.edu/phonlab/projects/uwnu.php" target="_blank" rel="noopener">
-  Project
-</a>
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
+</section>
   
   
 
