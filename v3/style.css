@@ -533,6 +533,10 @@ a[data-fancybox] img {
 .section-heading p {
   font-weight: 400;
   font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.dark .section-heading p {
   color: #b2b2b2;
 }
 
@@ -910,7 +914,7 @@ article {
 }
 
 .article-title {
-  font-size: 1.75rem;
+  font-size: 1.35rem;
 }
 
 .article-title a {
