@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Do not modify above -->
+    
+    <meta name="Catherine Yeo" content="">
+    <title>Catherine Yeo</title>
+
+    <!-- Nunito Sans font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link href="css/icon.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Overriding personal style -->
+    <link href="css/style.css" rel="stylesheet">   
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+
+  <script type="text/javascript">
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+</script>
+  
+  </head>
+
+  <body onload="filterSelection('all');">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://catherineyeo.tech">Catherine Yeo</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav mr-auto">
+            <li><a href="http://catherineyeo.tech">About</a></li>
+            <li><a href="http://catherineyeo.tech/#resume">Resume</a></li>      
+            <li><a href="http://catherineyeo.tech/#research">Publications</a></li>
+            <li><a href="http://catherineyeo.tech/writing">Writing</a></li>
+            <li><a href="http://catherineyeo.tech/courses">Courses</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- WRITING -->
+    <div class="container">
+      <div class="page-header"><h3>Writing</h3></div>
+      <font size="3">
+
+        <p>I started a Medium publication <a href="http://fairbytes.org/">Fair Bytes</a> to share short (byte-sized) pieces about research and resources related to fairness and ethics of AI. I also like to write fiction and occasionally blog about school, writing, and life.</p>
+
+        <div id="myBtnContainer">
+          <button class="btn" onclick="filterSelection('all')"> Show All</button>
+          <button class="btn" onclick="filterSelection('tech')"> AI/Tech </button>
+          <button class="btn" onclick="filterSelection('resources')"> Resources </button>
+          <button class="btn" onclick="filterSelection('fiction')"> Fiction </button>
+          <button class="btn" onclick="filterSelection('opinion')"> Opinion </button>
+        </div>
+
+        <div class="container">
+        <hr>
+
+        <div class="filterDiv resources">
+          <h4>
+            <a href="https://medium.com/@catyeo18/should-you-take-a-gap-year-during-covid-19-f9ebaa573061">
+            Should You Take A Gap Year During COVID-19?
+            </a>
+          </h4>
+          <p><i>Medium</i> • Resources </p>
+          <p>July 9, 2020</p>
+          <hr>
+        </div>
+
+        <div class="filterDiv tech">
+          <h4>
+            <a href="https://medium.com/fair-bytes/we-need-to-change-how-image-datasets-are-curated-b325642394df">
+            We Need to Change How Image Datasets are Curated
+            </a>
+          </h4>
+          <p><i>Fair Bytes</i> • AI/Tech </p>
+          <p>July 1, 2020</p>
+          <hr>
+        </div>
+
+        <div class="filterDiv tech resources">
+          <h4>
+            <a href="https://medium.com/fair-bytes/reading-list-for-fairness-in-ai-topics-337e8606fd8d">
+            Reading List for Fairness in AI Topics
+            </a>
+          </h4>
+          <p><i>Fair Bytes</i> • AI/Tech </p>
+          <p>June 24, 2020</p>
+          <hr>
+        </div>
+
+        <div class="filterDiv tech">
+          <h4>
+            <a href="https://medium.com/fair-bytes/new-way-to-measure-crowdsourcing-bias-in-machine-learning-8a7c736649d1">
+            New Way to Measure Crowdsourcing Bias in Machine Learning
+            </a>
+          </h4>
+          <p><i>Fair Bytes</i> • AI/Tech </p>
+          <p>June 17, 2020</p>
+          <hr>
+        </div>
+
+        <div class="filterDiv tech resources">
+        <h4>
+          <a href="https://medium.com/fair-bytes/why-we-need-ai-literacy-716d5a63ecc3">
+          Why We Need AI Literacy
+          </a>
+        </h4>
+        <p><i>Fair Bytes</i> • AI/Tech </p>
+        <p>June 3, 2020</p>
+        <hr>
+        </div>
+
+        <div class="filterDiv tech">
+        <h4>
+          <a href="https://medium.com/fair-bytes/how-biased-is-gpt-3-5b2b91f1177">
+          How Biased is GPT-3?
+          </a>
+        </h4>
+        <p><i>Fair Bytes</i> • AI/Tech </p>
+        <p>June 3, 2020</p>
+        <hr>
+        </div>
+
+        <div class="filterDiv tech resources">
+        <h4>
+          <a href="https://medium.com/fair-bytes/best-resources-to-teach-ai-ethics-in-the-k-12-classroom-a801e00839d5">
+          Best K-12 Resources to Teach AI Ethics
+          </a>
+        </h4>
+        <p><i>Fair Bytes</i> • AI/Tech </p>
+        <p>May 27, 2020</p>
+        <hr>
+        </div>
+
+        <div class="filterDiv tech">
+        <h4>
+          <a href="https://medium.com/fair-bytes/what-is-transparency-in-ai-bd08b2e901ac">
+          What is Transparency in AI?
+          </a>
+        </h4>
+        <p><i>Fair Bytes</i> • AI/Tech </p>
+        <p>May 20, 2020</p>
+        <hr>
+        </div>
+
+        <div class="filterDiv tech">
+        <h4>
+          <a href="https://medium.com/fair-bytes/nlp-bias-against-people-with-disabilities-bf13bda66a8e">
+          NLP Bias Against People with Disabilities
+          </a>
+        </h4>
+        <p><i>Fair Bytes</i> • AI/Tech </p>
+        <p>May 13, 2020</p>
+        <hr></div>
+
+        <div class="filterDiv tech">
+        <h4>
+          <a href="https://medium.com/fair-bytes/fair-bytes-a-deeper-lens-into-fairness-in-ai-6b956ca24771">
+          Fair Bytes: A Deeper Lens into Fairness in AI
+          </a>
+        </h4>
+        <p><i>Fair Bytes</i> • AI/Tech </p>
+        <p>May 5, 2020</p>
+        <hr>
+        </div>
+
+        <div class="filterDiv opinion">
+        <h4>
+          <a href="https://www.thecrimson.com/article/2020/3/31/yeo-my-return-to-online-school/">
+          All the Blue Light We Cannot See: My Return to Online School
+          </a>
+        </h4>
+        <p><i>The Harvard Crimson</i> • Op-Ed </p>
+        <p>Mar 31, 2020</p>
+        <hr>
+        </div>
+
+        <div class="filterDiv fiction">
+        <h4>
+          <a href="https://harvardtechnologyreview.com/2020/01/27/night-and-day/">
+          Night and Day
+          </a>
+        </h4>
+        <p><i>Harvard Tech Review</i> • Science Fiction </p>
+        <p>Jan 27, 2020</p>
+        <hr>
+        </div>
+
+      </div>
+
+      </font>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+   ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

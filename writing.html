@@ -1,266 +1,493 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Do not modify above -->
-    
-    <meta name="Catherine Yeo" content="">
-    <title>Catherine Yeo</title>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Nunito Sans font -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- font awesome icons -->
-    <link href="css/icon.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <!-- Overriding personal style -->
-    <link href="css/style.css" rel="stylesheet">   
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+  <meta name="Catherine Yeo" content="">
+  <meta name="description" content="Computer Science student and researcher at Harvard University.">
+  <title>Catherine Yeo</title>
+
+  <meta name="theme-color" content="#2962ff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <link rel="icon" type="image/png" href="/img/icon.png"> -->
+  <link rel="apple-touch-icon" type="image/png" href="/img/profile2018.png">
+  <link rel="canonical" href="http://catherineyeo.tech">
 
   <script type="text/javascript">
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("filterDiv");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
 
-      // Show filtered elements
-      function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      // Hide elements that are not selected
-      function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
+    ga('create', 'UA-106123370-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
-      // Add active class to the current control button (highlight it)
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-</script>
-  
-  </head>
+</head>
 
-  <body onload="filterSelection('all');">
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://catherineyeo.tech">Catherine Yeo</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav mr-auto">
-            <li><a href="http://catherineyeo.tech">About</a></li>
-            <li><a href="http://catherineyeo.tech/#resume">Resume</a></li>      
-            <li><a href="http://catherineyeo.tech/#research">Publications</a></li>
-            <li><a href="http://catherineyeo.tech/writing">Writing</a></li>
-            <li><a href="http://catherineyeo.tech/courses">Courses</a></li>
-          </ul>
-      </div>
-    </nav>
 
-    <!-- WRITING -->
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+  <aside class="search-results" id="search">
     <div class="container">
-      <div class="page-header"><h3>Writing</h3></div>
-      <font size="3">
+      <section class="search-header">
 
-        <p>I started a Medium publication <a href="http://fairbytes.org/">Fair Bytes</a> to share short (byte-sized) pieces about research and resources related to fairness and ethics of AI. I also like to write fiction and occasionally blog about school, writing, and life.</p>
-
-        <div id="myBtnContainer">
-          <button class="btn" onclick="filterSelection('all')"> Show All</button>
-          <button class="btn" onclick="filterSelection('tech')"> AI/Tech </button>
-          <button class="btn" onclick="filterSelection('resources')"> Resources </button>
-          <button class="btn" onclick="filterSelection('fiction')"> Fiction </button>
-          <button class="btn" onclick="filterSelection('opinion')"> Opinion </button>
+        <div class="row no-gutters justify-content-between mb-3">
+          <div class="col-6">
+            <h1>Search</h1>
+          </div>
+          <div class="col-6 col-search-close">
+            <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          </div>
         </div>
 
-        <div class="container">
-        <hr>
+        <div id="search-box">
+          
+          <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+          
+        </div>
 
-        <div class="filterDiv resources">
-          <h4>
+      </section>
+      <section class="section-search-results">
+
+        <div id="search-hits">
+          
+        </div>
+
+      </section>
+    </div>
+  </aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+      <a class="navbar-brand" href=""></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="http://catherineyeo.tech" data-target="#about">
+            <span>About</span>           
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="http://catherineyeo.tech#experience" data-target="#experience">
+            <span>Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="http://catherineyeo.tech#publications" data-target="#publications">
+            <span>Publications</span>         
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="http://catherineyeo.tech/writing" data-target="writing.html">
+            <span>Writing</span>         
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <!-- Search function -->
+        <!-- <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li> -->
+
+        <!-- Dark mode toggle -->
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="writing" class="home-section wg-featured">
+  <div class=container>
+    <div class=row>
+      <div class="col-12 col-lg-4 section-heading">
+        <h1>Writing</h1>
+        <p class="subtitle" style="font-size: 85%">I started a Medium publication <a href="http://fairbytes.org/">Fair Bytes</a> to share short (byte-sized) pieces about research and resources related to fairness and ethics of AI.</p>
+        <p style="font-size: 85%">I also like to write fiction and occasionally write about school, life, and other topics.</p>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jul 9, 2020 • <i>Medium</i> • Resources </span>
+          </div>
+
+          <div>
             <a href="https://medium.com/@catyeo18/should-you-take-a-gap-year-during-covid-19-f9ebaa573061">
-            Should You Take A Gap Year During COVID-19?
+              <img src="img/gapyear.png" class=article-banner>
             </a>
-          </h4>
-          <p><i>Medium</i> • Resources </p>
-          <p>July 9, 2020</p>
-          <hr>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/@catyeo18/should-you-take-a-gap-year-during-covid-19-f9ebaa573061">Should You Take A Gap Year During COVID-19?</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>A guide for college students on factors to consider and options for what to do in the next school yeargap</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech">
-          <h4>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jul 1, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
+
+          <div>
             <a href="https://medium.com/fair-bytes/we-need-to-change-how-image-datasets-are-curated-b325642394df">
-            We Need to Change How Image Datasets are Curated
+              <img src="img/datasetcuration.png" class=article-banner>
             </a>
-          </h4>
-          <p><i>Fair Bytes</i> • AI/Tech </p>
-          <p>July 1, 2020</p>
-          <hr>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/we-need-to-change-how-image-datasets-are-curated-b325642394df">We Need to Change How Image Datasets are Curated</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Why many gold-standard computer vision datasets, such as ImageNet, are flawed</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech resources">
-          <h4>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jun 24, 2020 • <i>Fair Bytes</i> • AI/Tech, Resources </span>
+          </div>
+
+          <div>
             <a href="https://medium.com/fair-bytes/reading-list-for-fairness-in-ai-topics-337e8606fd8d">
-            Reading List for Fairness in AI Topics
+              <img src="img/fairnesslist.png" class=article-banner>
             </a>
-          </h4>
-          <p><i>Fair Bytes</i> • AI/Tech </p>
-          <p>June 24, 2020</p>
-          <hr>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/reading-list-for-fairness-in-ai-topics-337e8606fd8d">Reading List for Fairness in AI Topics</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Papers, books, and resources to learn about fairness in vision, NLP, and more</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech">
-          <h4>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jun 17, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
+
+          <div>
             <a href="https://medium.com/fair-bytes/new-way-to-measure-crowdsourcing-bias-in-machine-learning-8a7c736649d1">
-            New Way to Measure Crowdsourcing Bias in Machine Learning
+              <img src="img/crowdsourcing.jpeg" class=article-banner>
             </a>
-          </h4>
-          <p><i>Fair Bytes</i> • AI/Tech </p>
-          <p>June 17, 2020</p>
-          <hr>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/new-way-to-measure-crowdsourcing-bias-in-machine-learning-8a7c736649d1">New Way to Measure Crowdsourcing Bias in Machine Learning</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>An overview of how to use counterfactual fairness to quantify the social bias of crowd workers</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech resources">
-        <h4>
-          <a href="https://medium.com/fair-bytes/why-we-need-ai-literacy-716d5a63ecc3">
-          Why We Need AI Literacy
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>June 3, 2020</p>
-        <hr>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jun 10, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
+
+          <div>
+            <a href="https://medium.com/fair-bytes/why-we-need-ai-literacy-716d5a63ecc3">
+              <img src="img/jordan.jpeg" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/why-we-need-ai-literacy-716d5a63ecc3">Why We Need AI Literacy</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Reason #5: Just because you CAN develop an algorithm, doesn’t mean you SHOULD</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech">
-        <h4>
-          <a href="https://medium.com/fair-bytes/how-biased-is-gpt-3-5b2b91f1177">
-          How Biased is GPT-3?
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>June 3, 2020</p>
-        <hr>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jun 3, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
+
+          <div>
+            <a href="https://medium.com/fair-bytes/how-biased-is-gpt-3-5b2b91f1177">
+              <img src="img/gpt3.png" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/how-biased-is-gpt-3-5b2b91f1177">How Biased is GPT-3?</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Despite its impressive performance, the world’s newest language model reflects societal biases in gender, race, and religion</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech resources">
-        <h4>
-          <a href="https://medium.com/fair-bytes/best-resources-to-teach-ai-ethics-in-the-k-12-classroom-a801e00839d5">
-          Best K-12 Resources to Teach AI Ethics
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>May 27, 2020</p>
-        <hr>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>May 27, 2020 • <i>Fair Bytes</i> • AI/Tech, Resources </span>
+          </div>
+
+          <div>
+            <a href="https://medium.com/fair-bytes/best-resources-to-teach-ai-ethics-in-the-k-12-classroom-a801e00839d5">
+              <img src="img/k12resources.png" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/best-resources-to-teach-ai-ethics-in-the-k-12-classroom-a801e00839d5">Best K-12 Resources to Teach AI Ethics</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Curricula, projects, and even fiction books to empower students to learn about AI ethics</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech">
-        <h4>
-          <a href="https://medium.com/fair-bytes/what-is-transparency-in-ai-bd08b2e901ac">
-          What is Transparency in AI?
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>May 20, 2020</p>
-        <hr>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>May 20, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
+
+          <div>
+            <a href="https://medium.com/fair-bytes/what-is-transparency-in-ai-bd08b2e901ac">
+              <img src="img/transparency.jpeg" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/what-is-transparency-in-ai-bd08b2e901ac">What is Transparency in AI?</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>What does it mean for a machine learning algorithm to be “transparent”?</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv tech">
-        <h4>
-          <a href="https://medium.com/fair-bytes/nlp-bias-against-people-with-disabilities-bf13bda66a8e">
-          NLP Bias Against People with Disabilities
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>May 13, 2020</p>
-        <hr></div>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>May 13, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
 
-        <div class="filterDiv tech">
-        <h4>
-          <a href="https://medium.com/fair-bytes/fair-bytes-a-deeper-lens-into-fairness-in-ai-6b956ca24771">
-          Fair Bytes: A Deeper Lens into Fairness in AI
-          </a>
-        </h4>
-        <p><i>Fair Bytes</i> • AI/Tech </p>
-        <p>May 5, 2020</p>
-        <hr>
+          <div>
+            <a href="https://medium.com/fair-bytes/nlp-bias-against-people-with-disabilities-bf13bda66a8e">
+              <img src="img/biasdisability.jpeg" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/nlp-bias-against-people-with-disabilities-bf13bda66a8e">NLP Bias Against People with Disabilities</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>An overview of how biases against mentions of disabilities are embedded in natural language processing tasks and models</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv opinion">
-        <h4>
-          <a href="https://www.thecrimson.com/article/2020/3/31/yeo-my-return-to-online-school/">
-          All the Blue Light We Cannot See: My Return to Online School
-          </a>
-        </h4>
-        <p><i>The Harvard Crimson</i> • Op-Ed </p>
-        <p>Mar 31, 2020</p>
-        <hr>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>May 5,, 2020 • <i>Fair Bytes</i> • AI/Tech </span>
+          </div>
+
+          <div>
+            <a href="https://medium.com/fair-bytes/fair-bytes-a-deeper-lens-into-fairness-in-ai-6b956ca24771">
+              <img src="img/robothand.jpeg" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://medium.com/fair-bytes/fair-bytes-a-deeper-lens-into-fairness-in-ai-6b956ca24771">Fair Bytes: A Deeper Lens into Fairness in AI</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Understanding algorithmic fairness and ethics is more imperative than ever</p>
+            </div>
+          </div>
         </div>
 
-        <div class="filterDiv fiction">
-        <h4>
-          <a href="https://harvardtechnologyreview.com/2020/01/27/night-and-day/">
-          Night and Day
-          </a>
-        </h4>
-        <p><i>Harvard Tech Review</i> • Science Fiction </p>
-        <p>Jan 27, 2020</p>
-        <hr>
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Mar 31, 2020 • <i>The Crimson</i> • Op-Ed </span>
+          </div>
+
+          <div>
+            <a href="https://www.thecrimson.com/article/2020/3/31/yeo-my-return-to-online-school/">
+              <img src="img/dunster.jpg" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://www.thecrimson.com/article/2020/3/31/yeo-my-return-to-online-school/">All the Blue Light We Cannot See: My Return to Online School</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>As we undergo such chaotic times together, a virtual ecosystem gives us the chance to strengthen the bonds we’ve already forged in physical presence.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class=card-simple>
+          <div class=article-metadata>
+            <span class=article-date>Jan 27, 2020 • <i>Harvard Tech Review</i> • Science Fiction </span>
+          </div>
+
+          <div>
+            <a href="https://harvardtechnologyreview.com/2020/01/27/night-and-day/">
+              <img src="img/nightday.jpg" class=article-banner>
+            </a>
+            <h3 class="article-title mb-1 mt-3">
+              <a href="https://harvardtechnologyreview.com/2020/01/27/night-and-day/">Night and Day</a>
+            </h3>
+            <div style="font-size:90%">
+              <p>Tibby zaps awake from her evening nap at seven o’clock, just like any other day. She stretches her joints and takes eleven steps forward. On the tenth, she stumbles into a chair.</p>
+            </div>
+          </div>
         </div>
 
       </div>
-
-      </font>
     </div>
+  </div>
+</section>
 
 
-    <!-- Bootstrap core JavaScript
-   ================================================== -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Inspired by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+    <script src="academic.js"></script>
+
   </body>
 </html>
+
+
