@@ -1427,6 +1427,27 @@ article .article-metadata {
   opacity: 0.6;
 }
 
+/* desktop & tablet */
+@media screen and (min-width: 992px) {
+  .card-project {
+    height: 100%;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .card-project {
+    height: 100%;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 768px) {
+  .card-project {
+    margin-bottom: 20px;
+  }
+}
+
 /*************************************************
  *  Contact
  **************************************************/
