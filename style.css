@@ -151,7 +151,7 @@ a:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, #ff99a5bd), to(#ff99a5bd));
     text-decoration: none;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 800;
 }
 .label-pink:hover,
 .label-pink:focus {
@@ -163,7 +163,7 @@ a:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, #f58787d1), to(#f58787d1));
     text-decoration: none;
     color: black;
-    font-weight: 600;
+    font-weight: 800;
 }
 .label-red:hover,
 .label-red:focus {
@@ -175,7 +175,7 @@ a:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(255, 121, 63, 0.4)), to(rgba(255, 121, 63, 0.4)));
     text-decoration: none;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 800;
 }
 .label-orange:hover,
 .label-orange:focus {
@@ -187,7 +187,7 @@ a:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(255, 177, 66, 0.4)), to(rgba(255, 177, 66, 0.4)));
     text-decoration: none;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 800;
 }
 .label-yellow:hover,
 .label-yellow:focus {
@@ -198,7 +198,7 @@ a:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(0, 131, 255, 0.2)), to(rgba(0, 131, 255, 0.2)));
     text-decoration: none;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 800;
 }
 .label-blue:hover,
 .label-blue:focus {
@@ -209,7 +209,7 @@ a:focus {
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(68, 189, 50, 0.4)), to(rgba(68, 189, 50, 0.4)));
     text-decoration: none;
     color: var(--black);
-    font-weight: 600;
+    font-weight: 800;
 }
 .label-green:hover,
 .label-green:focus {
