@@ -217,7 +217,14 @@ a:focus {
     text-decoration: none;
 }
 
-
+/* headers with thick underline */
+.header-pink {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, #ff99a5bd), to(#ff99a5bd));
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 800;
+}
 
 img,
 video {
