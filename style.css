@@ -1383,6 +1383,7 @@ article .article-metadata {
  
 .course {
   margin-bottom: -0.5rem;
+  height: 85%; /* hard-coded */
 }
 
 .course h6 {
