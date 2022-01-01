@@ -251,6 +251,10 @@ video {
   max-height: 400px;
 }
 
+.iframe-responsive {
+  width: 100%;
+}
+
 .img-responsive {
   /* Extend Bootstrap declaration with centering. */
   margin: 0 auto;
