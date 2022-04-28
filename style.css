@@ -58,6 +58,12 @@ p {
   margin-bottom: 1rem;
 }
 
+.quote {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
 /* Lists */
 ul, ol, dl {
   margin-top: 0;
@@ -111,6 +117,65 @@ h4, h5, h6 {
 }
 
 /* LINKS */
+.button-3d {
+  appearance: button;
+  background-color: #561068;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 50%;
+}
+
+.button-3d:after {
+  background-clip: padding-box;
+  background-color: #842C9B;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-3d:main,
+.button-3d:focus {
+  user-select: auto;
+}
+
+.button-3d:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-3d:disabled {
+  cursor: auto;
+}
 a,
 h3.article-title a:hover {
   color: var(--linkcolor);
