@@ -15,8 +15,8 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://catherinehyeo.com">
-  <meta property="og:title" content="Catherine Yeo">
+  <meta property="og:url" content="https://catherinehyeo.com/creator">
+  <meta property="og:title" content="The Creator Revolution">
   <meta property="og:description" content="The Creator Revolution: How Today’s Creative Talents Are Shaping Our Tomorrow examines the historic rise of digital content creators and their impact on transforming both our present and our future.">
   <meta property="og:image" content="/img/preview2018.jpg">
 
@@ -34,8 +34,44 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <script>
-  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  <script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
@@ -107,7 +143,7 @@
   <section id="about" class="home-section quote">
    	<div class="container">
    		<center><h3>WELCOME TO THE CREATOR REVOLUTION.</h3></center>
-   		<center><h4 style="color:#842C9B">30-DAY 99¢ SPECIAL PROMOTION • PAPERBACK COMING IN JUNE</h4></center>
+   		<center><h4 class="subtitle-banner" style="color:#842C9B;">30-DAY 99¢ SPECIAL PROMOTION • PAPERBACK COMING IN JUNE</h4></center>
 
 	    <div class="row">
 	      <div class="col-12 col-lg-5">
@@ -243,5 +279,25 @@
 	<!-- <section>
 		<center><h2>RESOURCES</h2></center>
 	</section> -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+    <script src="academic.js"></script>
 
 </html>
