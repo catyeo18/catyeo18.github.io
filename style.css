@@ -223,6 +223,9 @@ h4, h5, h6 {
     h4, h5, h6 {
       font-size: 0.8rem;
     }
+    .subtitle-banner {
+      margin-left: 15%; margin-right: 15%
+    }
 }
 
 .button-3d-light:after {
