@@ -209,6 +209,22 @@ h4, h5, h6 {
   width: 50%;
 }
 
+@media screen 
+  and (min-width: 375px) 
+  and (max-width: 812px) { 
+    .button-3d {
+      width: 80%;
+      font-size: 0.8rem;
+    }
+    .button-3d-light {
+      width: 80%;
+      font-size: 0.8rem;
+    }
+    h4, h5, h6 {
+      font-size: 0.8rem;
+    }
+}
+
 .button-3d-light:after {
   background-clip: padding-box;
   background-color: #9A57CE;
