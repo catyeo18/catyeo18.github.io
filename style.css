@@ -891,6 +891,14 @@ a[data-fancybox] img {
   position: relative;
 }
 
+/* phone */
+@media screen and (max-width: 768px) {
+  #profile-book {
+    width: 50%;
+    margin: auto auto;
+  }
+}
+
 .portrait {
   width: 200px;
   height: 200px;
@@ -972,6 +980,8 @@ p.currently_im {
   font-size: 0.85rem;
   /*color: rgba(0,0,0,0.6);*/
 }
+
+
 
 /*************************************************
  *  People widget
