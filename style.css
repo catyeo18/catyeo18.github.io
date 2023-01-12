@@ -896,6 +896,7 @@ a[data-fancybox] img {
   #profile-book {
     width: 50%;
     margin: auto auto;
+    margin-bottom: 5%;
   }
 }
 
