@@ -360,6 +360,10 @@ pre code {
     margin-top: 40px;
 }
 
+.courses p {
+    font-size:1rem;
+}
+
 .page-title {
     margin-bottom: 0;
 }
