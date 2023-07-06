@@ -1,5 +1,18 @@
+:root {
+  --darkest: #461220;
+  --dark: #8C2F39;
+  --medium: #B23A48;
+  --light: #ffa6a9;
+  --lightest: #fed0bb;
+
+  --linkcolor: #B23A48;
+  --grayedout: #dbdbdb;
+  --white: #ffffff;
+  --black: var(--black);
+}
+
 body {
-    font-family: "ubuntu", sans-serif;
+    font-family: "open+sans", sans-serif;
     font-weight: 400;
     color: #333;
     line-height: 1.6;
@@ -7,7 +20,7 @@ body {
 }
 
 a, a:hover {
-    color: #a00;
+    color: var(--linkcolor);
     text-decoration: none;
     word-break: break-word;
 }
@@ -66,7 +79,7 @@ blockquote {
     font-size: 1.4rem;
     font-family: Georgia,bitstream charter,serif;
     border-left: 3px solid;
-    border-color: #a00;
+    border-color: var(--linkcolor);
     padding-left: 20px;
 }
 
@@ -80,7 +93,7 @@ blockquote em {
 }
 
 a,a:hover {
-    color: #a00;
+    color: var(--linkcolor);
     text-decoration: none
 }
 
@@ -166,8 +179,9 @@ ul {
     list-style: disc inside;
 }
 
-.site-title a {
+.site-title {
 	color: #333;
+    font-weight: 500;
 	text-decoration: none !important;
 }
 
@@ -263,10 +277,10 @@ pre code {
 }
 
 .section .section-header {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 800;
     text-transform: uppercase;
-    color: #999;
+    color: #7A7A7A;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
@@ -278,8 +292,8 @@ pre code {
 .recent-posts .posts .post .meta,
 .post .post-header .meta,
 .list .posts .post .meta {
-    font-size: 0.725rem;
-    color: #999;
+    font-size: 0.85rem;
+    color: #7A7A7A;
     margin-bottom: 4px;
 }
 
@@ -301,7 +315,7 @@ pre code {
 }
 
 .post .draft-label {
-    color: #a00;
+    color: var(--linkcolor);
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -316,10 +330,10 @@ pre code {
 
 .post-tags .tags a {
     display: inline-block;
-    border: 1px solid #a00;
+    border: 1px solid var(--linkcolor);
     border-radius: 4px;
     padding: 0px 6px;
-    color: #a00;
+    color: var(--linkcolor);
     line-height: 20px;
     font-size: 12px;
     text-decoration: none;
@@ -329,6 +343,12 @@ pre code {
 .list .posts .post .meta {
     margin-bottom: 0;
     margin-left: 5px;
+}
+
+.intro {
+    border-bottom: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+    padding-bottom: 20px
 }
 
 .footer {
