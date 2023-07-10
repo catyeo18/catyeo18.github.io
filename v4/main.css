@@ -365,6 +365,10 @@ pre code {
     font-size:1rem;
 }
 
+.project .description {
+    font-size:1rem;
+}
+
 .page-title {
     margin-bottom: 0;
 }
