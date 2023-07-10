@@ -443,3 +443,86 @@ table th, table td {
         margin-top: 10px;
     }
 }
+
+/* links with thick underline */
+.label-purple {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgb(160 53 214 / 35%)), to(rgb(143 40 208 / 44%)));
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+}
+.label-purple:hover,
+.label-purple:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+
+.label-pink {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, #ff99a5bd), to(#ff99a5bd));
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+}
+.label-pink:hover,
+.label-pink:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+
+.label-red {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, #f58787d1), to(#f58787d1));
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.label-red:hover,
+.label-red:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+
+.label-orange {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(255, 121, 63, 0.4)), to(rgba(255, 121, 63, 0.4)));
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+}
+.label-orange:hover,
+.label-orange:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+
+.label-yellow {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(255, 177, 66, 0.4)), to(rgba(255, 177, 66, 0.4)));
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+}
+.label-yellow:hover,
+.label-yellow:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+.label-blue {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(0, 131, 255, 0.2)), to(rgba(0, 131, 255, 0.2)));
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+}
+.label-blue:hover,
+.label-blue:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
+.label-green {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), color-stop(60%, rgba(68, 189, 50, 0.4)), to(rgba(68, 189, 50, 0.4)));
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 800;
+}
+.label-green:hover,
+.label-green:focus {
+    color: var(--linkcolor);
+    text-decoration: none;
+}
