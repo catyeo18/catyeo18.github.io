@@ -1,894 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <meta name="Catherine Yeo" content="">
-  <meta name="description" content="Creator, builder, and investor studying Computer Science and English at Harvard University. Author of The Creator Revolution.">
-  <title>Catherine Yeo</title>
-
-  <!-- <link rel="icon" type="image/png" href="/img/icon.png"> -->
-  <link rel="apple-touch-icon" type="image/png" href="/img/profile2022.png">
-  <link rel="canonical" href="https://catherinehyeo.com">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://catherinehyeo.com">
-  <meta property="og:title" content="Catherine Yeo">
-  <meta property="og:description" content="Creator, builder, and investor studying Computer Science and English at Harvard University. Author of The Creator Revolution.">
-  <meta property="og:image" content="/img/preview2018.jpg">
-
-  <meta name="theme-color" content="#2962ff">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous" title="hl-light">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-
-  <link rel="stylesheet" href="style.css">
-
-  <script type="text/javascript">
-   function visibility_on(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'none')
-            e.style.display = 'block';
-   }
-   function visibility_off(id) {
-        var e = document.getElementById(id+"_text");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-        var e = document.getElementById(id+"_img");
-        if(e.style.display == 'block')
-            e.style.display = 'none';
-   }
-   function toggle_visibility(id) {
-       var e = document.getElementById(id+"_text");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-       var e = document.getElementById(id+"_img");
-       if(e.style.display == 'inline')
-          e.style.display = 'block';
-       else
-          e.style.display = 'inline';
-   }
-   function toggle_vis(id) {
-       var e = document.getElementById(id);
-       if (e.style.display == 'none')
-           e.style.display = 'inline';
-       else
-           e.style.display = 'none';
-   }
-
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-106123370-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-</head>
-
-
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-  <div class="container">
-      <a class="navbar-brand" href=""></a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto">
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#about" data-target="#about">
-            <span>About</span>           
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#writing" data-target="#writing">
-            <span>Writing</span>         
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#projects" data-target="#experience">
-            <span>Projects</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#publications" data-target="#publications">
-            <span>Publications</span>         
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#press" data-target="#press">
-            <span>Press</span>         
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="http://catherinehyeo.com/creator">
-            <span>BOOK</span>         
-          </a>
-        </li>
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-
-
-<span id="homepage" style="display: none"></span>
- 
-  <section id="about" class="home-section">
-    <div class="container">
-    <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
-      <div class="col-12 col-lg-4">
-        <div id="profile">
-
-      <img class="portrait" src="img/profile-2023-may.png" itemprop="image" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Catherine Yeo</h2>
-         <h3 itemprop="jobTitle">writing code by day, stories by night</h3> 
-        <!-- <h3 itemprop="jobTitle">Innovator • Storyteller • Changemaker</h3> -->
-        <!-- <p style="font-size: 80%">My life motto is to build, write, dream</p> -->       
-      </div>
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        <li>
-          <a itemprop="sameAs" href="mailto:cyeo@college.harvard.edu" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a itemprop="sameAs" href="https://linkedin.com/in/catherine-yeo" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a itemprop="sameAs" href="https://twitter.com/intent/follow?screen_name=catherinehyeo" target="_blank" rel="noopener">
-            <i class="fab fa-twitter big-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a itemprop="sameAs" href="https://medium.com/@catyeo18" target="_blank" rel="noopener">
-            <i class="fab fa-medium big-icon"></i>
-          </a>
-        </li>
-        <li>
-          <a itemprop="sameAs" href="https://scholar.google.com/citations?user=IdHyJfwAAAAJ" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar-square ai-2x"></i>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-
-  <div class="col-12 col-lg-8" itemprop="description">
-
-    <h3>Currently I'm...</h3>
-    <p>
-      🎓 a senior at Harvard studying CS + English (joint BA/MS degrees) <br>
-      🌟 sourcing startups as a venture partner at <a href="https://contrarycap.com/" class="label-blue">Contrary Capital</a> <br>
-      🎤 performing stand-up comedy <br>
-      📚 a published author - check out my book <i>The Creator Revolution</i> (New Degree Press, 2022)
-      <a href="https://catherinehyeo.com/creator" class="label-purple">HERE!</a> 
-      
-    </p>
-
-    <h3>Previously I've...</h3>
-    <p>
-      👩🏻‍💻 built products at <a href="https://thewaltdisneycompany.com/the-walt-disney-studios-studiolab-advances-the-art-of-storytelling-through-next-generation-technology/" class="label-pink">Disney</a>, <a href="https://techcrunch.com/2021/07/19/dover-raises-20m-to-bring-the-concept-of-orchestration-to-recruitment/" class="label-blue">Dover</a>, IBM Research, & Apple <br><!-- 
-      🚀 co-founded <a href="http://sesamecall.com/" class="label-yellow">Sesame</a> and <a href="https://www.thecrimson.com/article/2021/3/12/students-launch-vaccine-website/" class="label-orange">COVID Vaccines Info Guide</a><br> -->
-      <!-- 🙌 built <a href="https://covidvaccinesinfo.com?ref=cy" class="label-orange">COVID Vaccines Info Guide</a> to help thousands of Americans get vaccinated<br> -->
-      ⚖️ founded AI ethics education organization <a href="https://fairbytes.org/" class="label-blue">Fair Bytes</a> and taught Harvard's inaugural Machine Learning for Social Impact course<br>
-      🔥 organized 10 hackathons, founded <a href="https://www.teenvogue.com/story/catherine-yeo-pixelhacks-hackathon-interview" class="label-pink">PixelHacks</a> and <a href="https://www.seas.harvard.edu/news/2020/10/virtual-hackathon-yields-real-solutions" class="label-green">IvyHacks</a> <br>
-      ✍️ published over 120K+ words of fiction & 15K+ words of <a href="http://catherinehyeo.com#writing" class="label-orange">blog posts</a> as an online creator with hundreds of thousands of readers <br>
-      📝 cemented women's stories in history: 15 (& counting) <a href="https://twitter.com/catherinehyeo/status/1368613887432486918" class="label-yellow">Wikipedia biographies</a> created
-    </p>
-
-    <h4>Other Personal Things</h4>
-    <p>
-      💭 I like to think about: human-centric AI/ML; intersection of tech, storytelling, media, culture, and society; how we choose to live life and construct our morals and values; Asian American identity <br>
-      🖤 I nerd out about: Star Wars; Golden State Warriors; developer productivity hacks; Broadway musicals
-      <!-- 2007-2012 Youtube  -->
-    </p>
-
-  </div>
-</div>
-</section>
-  
-
-<section id="book" class="home-section quote">
-    <div class="container">
-      <center><h3>BUY MY BOOK TODAY! </h3></center>
-      <center><h4 class="subtitle-banner" style="color:#842C9B;"> 
-        Available on <a href="https://www.amazon.com/Creator-Revolution-Creative-Talents-Tomorrow-ebook/dp/B09ZK9SM3C" style="color:#842C9B; text-decoration: underline;">Amazon</a>,
-        <a href="https://www.barnesandnoble.com/w/the-creator-revolution-catherine-yeo/1141433258" style="color:#842C9B; text-decoration: underline;">Barnes & Nobles</a>, 
-        & <a href="https://bookshop.org/books/the-creator-revolution-how-today-s-creative-talents-are-shaping-our-tomorrow/9798885040624" style="color:#842C9B; text-decoration: underline;">Bookshop</a></h4></center>
-
-      <div class="row">
-        <div class="col-12 col-lg-5">
-          <div id="profile">
-          <img src="img/launchphoto.jpg" itemprop="image" alt="Photo of the book The Creator Revolution: How Today's Creative Talents Are Shaping Our Tomorrow">
-        </div>
-        </div>
-
-      <div class="col-12 col-lg-7" itemprop="description">
-
-      <p> <br>
-          <i>The Creator Revolution: How Today’s Creative Talents Are Shaping Our Tomorrow</i> examines the historic rise of digital content creators and their impact on transforming both our present and our future. <br><br>
-
-          You'll hear incredible stories about creators such as... <br>
-          <ul>
-      <li> Issa Rae, star and co-creator of HBO’s Insecure, who launched her filmmaking career on YouTube. </li>
-      <li> Claudine James, a teacher who went from instructing twenty-two students in her classroom to over 3 million on TikTok. </li>
-      <li> Ryan Kaji, who earned $30 million in 2020 as a nine-year-old creator and entrepreneur.</li>
-      </ul>
-
-      There's a new golden age of opportunities as our technological world continues to evolve. Welcome to the Creator Revolution — we are only just beginning. <br><br>
-
-      </p>
-
-    </div>
-
-
-  </div>
-
-  <div class="row" style="justify-content: center;">
-      <button class="button-3d-light" onclick="location.href='https://catherinehyeo.com/creator'" role="button" style="width:40%; margin-right:1rem">SEE MORE INFO</button>
-      <button class="button-3d" onclick="location.href='https://www.amazon.com/dp/B0B2WLWRCM'" role="button" style="width:40%; ">AMAZON</button>
-  </div>
-
-  </section>
-
-<!-- WRITING -->
-<section id=writing class="home-section wg-accomplishments">
-  <div class=container>
-      <div class=row>
-        <div class="col-12 section-heading">
-          <h1>Writing</h1>
-        </div>
-      </div>
-
-      <iframe src="https://cyeo.substack.com/embed" class="iframe-responsive"  height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
-
-      <div class="row">
-        <div class="col-12">
-          <h3 class="header-pink">Personal</h3>
-        </div>
-      </div>
-
-      <div class="row" itemprop="description">
-        <div class="col-12">
-          <p>
-            🎤 2023.05.17 • Time to Stand Up: For an Asian American woman, performing comedy is about much more than jokes. <a href="https://www.harvardmagazine.com/2023/05/time-to-stand-up"> [Harvard Magazine] </a> <br>
-            🚫 2023.04.26 • The Graduation Speech Harvard Wouldn't Let Me Give <a href="https://cyeo.substack.com/p/the-graduation-speech-harvard-wouldnt"> [Substack] </a> <br>
-            🌱 2023.01.01 • 2022 Wrapped <a href="https://cyeo.substack.com/p/2022-wrapped"> [Substack]</a> <br>
-            🍂 2022.09.12 • Reflecting Upon My Book Release, 3 Months Later <a href="https://cyeo.substack.com/p/reflecting-upon-my-book-release-3">[Substack]</a> <br>
-            🌟 2022.02.04 • Wikipedia's Struggle with Creators <a href="https://cyeo.substack.com/p/wikipedia-struggle-creators"> [Substack]</a> <br>
-            📖 2022.01.21 • <i>The Creator Revolution</i> January Update <a href="https://cyeo.substack.com/p/the-creator-revolution-january-update"> [Substack]</a> <br>
-            💥 2021.12.31 • 2021 Wrapped <a href="https://cyeo.substack.com/p/2021-wrapped"> [Substack]</a> <br>
-            🚀 2021.12.25 • The Gen Z Urge to Start a Substack <a href="https://cyeo.substack.com/p/first-piece"> [Substack]</a> <br>
-            ⏳ 2020.07.09 • Should You Take A Gap Year During COVID-19? <a href="https://medium.com/@catyeo18/should-you-take-a-gap-year-during-covid-19-f9ebaa573061">[Medium]</a> <br>
-            💻 2020.03.31 • All the Blue Light We Cannot See <a href="https://www.thecrimson.com/article/2020/3/31/yeo-my-return-to-online-school/">[The Harvard Crimson]</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <h3 class="header-pink">Technology </h3>
-        </div>
-      </div>
-
-
-      <div class="row" itemprop="description">
-        <div class="col-12">
-          <p>
-            🩺 2023.02.11 • Ribbon Health (Startup Deep Dive Report) <a href="https://research.contrary.com/reports/ribbon-health">[Contrary Research]</a><br>
-            💻 2022.12.16 • Netlify (Startup Deep Dive Report) <a href="https://research.contrary.com/reports/netlify">[Contrary Research]</a><br>
-            👾 2022.08.17 • Web3 Gaming & Play-to-Earn Economics <a href="https://mirror.xyz/catherineyeo.eth/DghPe-2uFyx4V3zhephHkbWLowAVaYc9yRnhS60cn3o">[Mirror]</a><br>
-            👥 2022.08.10 • Creator-Community Memberships: From Web2 to Web3 <a href="https://mirror.xyz/catherineyeo.eth/_SFHb2UKXuvlAXBqAjRqUHgHHaAtWrDJcHDKNhEO6Eo"> [Mirror]</a> <br>
-            🔭 2020.01.27 • Night and Day (Science Fiction) <a href="https://harvardtechnologyreview.com/2020/01/27/night-and-day/">[Harvard Tech Review]</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12">
-          <h3 class="header-pink">AI & AI Ethics</h3>
-        </div>
-      </div>
-
-      <div class="row" itemprop="description">
-        <div class="col-12">
-          <p>
-            🐘 2022.07.14 • Interview: Responsible AI with Anna Bethke <a href="https://medium.com/fair-bytes/interview-responsible-ai-with-anna-bethke-e52db42ca801">[Fair Bytes]</a> <br>
-            🔍 2022.05.09 • Similarity-Based Image Search for Visual Art <a href="https://towardsdatascience.com/similarity-based-image-search-for-visual-art-750c038283c7">[Towards Data Science]</a> <br>
-            👩🏻‍⚖️ 2022.03.23 • Interview: AI & Criminal Justice with Julia Dressel <a href="https://medium.com/fair-bytes/interview-ai-criminal-justice-with-julia-dressel-2fe9f58795b1">[Fair Bytes]</a> <br>
-            🎨 2021.12.14 • Neural Style Transfer Across Artistic Styles <a href="https://medium.com/@catyeo18/neural-style-transfer-across-artistic-styles-19c065680cce">[Medium]</a> <br>
-            🤖 2021.10.26 • Interview: Robot Ethics & Design with Shalaleh Rismani <a href="https://medium.com/fair-bytes/robot-ethics-design-with-shalaleh-rismani-5723fd1a6de3">[Fair Bytes]</a> <br>
-            🍋 2020.08.13 • Explaining Machine Learning Predictions and Building Trust with LIME <a href="https://medium.com/fair-bytes/explaining-machine-learning-predictions-and-building-trust-with-lime-473bf46de61a">[Fair Bytes]</a> <br>
-            🔥 2020.07.16 • Machine Learning’s Obsession with Kids’ TV Show Characters <a href="https://towardsdatascience.com/machine-learnings-obsession-with-kids-tv-show-characters-728edfb43b3c">[Towards Data Science]</a> <br>
-            🖼 2020.07.01 • We Need to Change How Image Datasets are Curated <a href="https://medium.com/fair-bytes/we-need-to-change-how-image-datasets-are-curated-b325642394df">[Fair Bytes]</a> <br>
-            📚 2020.06.24 • Reading List for Fairness in AI Topics <a href="https://medium.com/fair-bytes/reading-list-for-fairness-in-ai-topics-337e8606fd8d">[Fair Bytes]</a> <br>
-            ⚖️ 2020.06.17 • New Way to Measure Crowdsourcing Bias in Machine Learning <a href="https://medium.com/fair-bytes/new-way-to-measure-crowdsourcing-bias-in-machine-learning-8a7c736649d1">[Fair Bytes]</a> <br>
-            👓 2020.06.10 • Why We Need AI Literacy <a href="https://medium.com/fair-bytes/why-we-need-ai-literacy-716d5a63ecc3">[Fair Bytes]</a> <br>
-            🤔 2020.06.03 • How Biased is GPT-3? <a href="https://medium.com/fair-bytes/how-biased-is-gpt-3-5b2b91f1177">[Fair Bytes]</a> <br>
-            🏫 2020.05.27 • Best K-12 Resources to Teach AI Ethics <a href="https://medium.com/fair-bytes/best-resources-to-teach-ai-ethics-in-the-k-12-classroom-a801e00839d5">[Fair Bytes]</a> <br>
-            🔭 2020.05.20 • What is Transparency in AI? <a href="https://medium.com/fair-bytes/what-is-transparency-in-ai-bd08b2e901ac">[Fair Bytes]</a> <br>
-            👨‍🦽 2020.05.13 • NLP Bias Against Disabled People <a href="https://medium.com/fair-bytes/nlp-bias-against-people-with-disabilities-bf13bda66a8e">[Fair Bytes]</a> <br>
-            💫 2020.05.05 • Fair Bytes: A Deeper Lens into Fairness in AI <a href="https://medium.com/fair-bytes/fair-bytes-a-deeper-lens-into-fairness-in-ai-6b956ca24771">[Fair Bytes]</a>
-          </p>
-        </div>
-      </div>
-  </div>
-</section>
-<!-- END OF WRITING -->
-  
-  
-<!-- PROJECTS -->
-<section id="projects" class="home-section">
-  <div class="container">
-    <div class=row>
-      <div class="col-12 section-heading">
-        <h1>Impact & Community Projects</h1>
-        <br>
-      </div>
-    </div>
-
-    <div class="row"> 
-      <!-- START 1 card -->
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="card-simple card-project">
-          <div>
-            <a href="https://fairbytes.org"><img src="img/projects/fairb.png" class=article-banner></a>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="https://fairbytes.org">Fair Bytes</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Founder • 2020 - 2022 </span>
-            </div>
-            <div style="font-size:80%">
-              <p>Organization advancing AI fairness & ethics education through byte-sized content, resources, and community, reaching 25,000+ individuals since its launch.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-
-      <!-- START 1 card -->
-      <div class="col-12 col-lg-6 col-md-6">
-        <div class="card-simple card-project">
-          <div>
-            <a href="https://www.thecrimson.com/article/2021/3/12/students-launch-vaccine-website/"><img src="img/projects/covidvaccines.png" class=article-banner></a>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="https://www.thecrimson.com/article/2021/3/12/students-launch-vaccine-website/">COVID Vaccines Info Guide</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Co-Founder</a> • 2021 </span>
-            </div>
-            <div style="font-size:80%">
-              <p>One-stop source that helped thousands of Americans book & receive their COVID-19 vaccine. Featured in NBC, Harvard SEAS, and The Crimson.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-    </div>
-
-    <br> 
-    <div class="row"> 
-      <!-- START 1 card -->
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="card-simple card-project">
-          <div>
-            <a href="http://pixelhacks.com"><img src="img/projects/ph-standing.jpg" class=article-banner></a>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="http://pixelhacks.com">PixelHacks</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Founder/Advisor • 2016 - Present </span>
-            </div>
-            <div style="font-size:80%">
-              <p>The Bay Area's first all-female high school hackathon. Introduced 1000+ high school women to CS & entrepreneurship since founding.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-
-      <!-- START 1 card -->
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="card-simple card-project">
-          <div>
-            <a href="https://hackharvard.io"><img src="img/projects/hh.jpg" class=article-banner></a>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="https://hackharvard.io">HackHarvard</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Director • 2018 - 2020 </span>
-            </div>
-            <div style="font-size:80%">
-              <p>Harvard's annual hackathon, held with 600+ attendees globally.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-
-      <!-- START 1 card -->
-      <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="card-simple card-project">
-          <div>
-            <a href="https://ivyhacks.com"><img src="img/projects/ivyhacks2.png" class=article-banner></a>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="https://ivyhacks.com">IvyHacks</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Co-Founder/Director • 2020 </span>
-            </div>
-            <div style="font-size:80%">
-              <p>The ultimate virtual hackathon -- built with love by 6 Ivy League hackathons, joined by 3000+ attendees from around the world.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-    </div>
-
-    <br>
-    <div class="row"> 
-      <!-- START 1 card -->
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="card-simple card-project">
-          <div>
-            <img src="img/projects/sesame.png" class=article-banner>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="https://sesamecall.com">Sesame</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Co-Founder • 2020 - 2021 </span>
-            </div>
-            <div style="font-size:80%">
-              <p>Consumer social x productivity student built by students for students. Used by 2,000+ users at its peak.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-
-      <!-- START 1 card -->
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="card-simple card-project">
-          <div>
-            <a href="https://datamatch.me"><img src="img/projects/datamatch.png" class=article-banner></a>
-            <h3 class="article-title mb-1 mt-3">
-              <a href="https://datamatch.me">Datamatch</a>
-            </h3>
-            <div class=article-metadata>
-              <span class=article-date>Growth • 2019 - 2020 </span>
-            </div>
-            <div style="font-size:80%">
-              <p>The Valentine's Day matchmaker for college students. Grew to 40,000+ students at 29 universities in 2020.</p> 
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END 1 card -->
-    </div>
-
-  </div>
-</section>
-
-
-<!-- PUBLICATIONS -->
-  <section id="publications" class="home-section">
-    <div class="container">
-  
-    <div class="row">
-      <div class="col-12 col-lg-4 section-heading">
-      <h1>Publications</h1>
-    </div>
-
-    <div class="col-12 col-lg-8">
-
-    <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-      <div class="media-body">
-
-        <h3 class="article-title mb-0 mt-0" itemprop="name">
-          Defining and Evaluating Fair Natural Language Generation (2020)
-        </h3>
-        <div class="article-style" itemprop="articleBody">
-          <b>Catherine Yeo</b>, Alyssa Chen <br>
-          Proceedings of the The Fourth Widening Natural Language Processing Workshop at ACL (Association for Computational Linguistics)
-        </div>
-
-        
-        <div class="btn-links">
-          <a href="javascript:toggle_vis('abstract-nlg')" class="btn btn-outline-primary my-1 mr-1 btn-sm">abstract</a>
-          <a href="https://arxiv.org/abs/2008.01548" class="btn btn-outline-primary my-1 mr-1 btn-sm">arXiv</a>
-          <a href="https://www.aclweb.org/anthology/2020.winlp-1.27/" class="btn btn-outline-primary my-1 mr-1 btn-sm">ACL Anthology</a>
-          <a href="https://slideslive.com/38929566/defining-and-evaluating-fair-natural-language-generation" class="btn btn-outline-primary my-1 mr-1 btn-sm">Talk</a>
-          <br><br>
-          <div id="abstract-nlg" style="display:none">
-            <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
-              Our work focuses on the biases that emerge in the natural language generation (NLG) task of sentence completion. In particular, we introduce a mathematical framework of fairness for NLG followed by an evaluation of gender biases in two state-of-the-art language models, GPT-2 and XLNet. Our analysis provides a theoretical formulation for defining biases in NLG and empirical evidence that existing language generation models embed gender bias.
-            </font></blockquote>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-      <div class="media-body">
-
-        <h3 class="article-title mb-0 mt-0" itemprop="name">
-          CONVO: What does conversational programming need? (2020)
-        </h3>
-        <div class="article-style" itemprop="articleBody">
-          Jessica Van Brummelen, Kevin Weng, Phoebe Lin, <b>Catherine Yeo</b> <br>
-          IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)
-        </div>
-
-        
-        <div class="btn-links">
-          <a href="javascript:toggle_vis('abstract-convo')" class="btn btn-outline-primary my-1 mr-1 btn-sm">abstract</a>
-          <a href="https://arxiv.org/abs/2003.01318" class="btn btn-outline-primary my-1 mr-1 btn-sm">arXiv</a>
-          <a href="https://ieeexplore.ieee.org/document/9127277" class="btn btn-outline-primary my-1 mr-1 btn-sm">IEEE</a>
-          <br><br>
-          <div id="abstract-convo" style="display:none">
-            <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
-              Vast improvements in natural language understanding and speech recognition have paved the way for conversational interaction with computers. While conversational agents have often been used for short goal-oriented dialog, we know little about agents for developing computer programs. To explore the utility of natural language for programming, we conducted a study (n=45) comparing different input methods to a conversational programming system we developed. Participants completed novice and advanced tasks using voice-based, text-based, and voice-or-text-based systems. We found that users appreciated aspects of each system (e.g., voice-input efficiency, text-input precision) and that novice users were more optimistic about programming using voice-input than advanced users. Our results show that future conversational programming tools should be tailored to users' programming experience and allow users to choose their preferred input mode. To reduce cognitive load, future interfaces can incorporate visualizations and possess custom natural language understanding and speech recognition models for programming.
-            </font></blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="media stream-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-      <div class="media-body">
-
-        <h3 class="article-title mb-0 mt-0" itemprop="name">
-          Polynomials That Behave Like The Riemann Zeta-Function (2017)
-        </h3>
-        <div class="article-style" itemprop="articleBody">
-          Dean Cureton*, <b>Catherine Yeo</b>* 
-        </div>
-
-        
-        <div class="btn-links">
-          <a href="javascript:toggle_vis('abstract-riemann')" class="btn btn-outline-primary my-1 mr-1 btn-sm">abstract</a>
-          <a href="files/REU paper.pdf" class="btn btn-outline-primary my-1 mr-1 btn-sm">PDF</a>
-          <br><br>
-          <div id="abstract-riemann" style="display:none">
-            <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
-               In this paper, revisiting work of Rodriguez-Villegas, we produce infinite families of polynomials that satisfy the essential expected properties of the Riemann zeta-function. We identify natural families of rational functions in x which are the generating functions for the values of “zeta-polynomials” Z_T(s). In analogy with the zeta-function, these polynomials satisfy a functional equation of the form Z_T(s) = (−1)^t Z_T(1 − s), and enjoy the additional property that if Z_T(ρ) = 0, then Re(ρ) = 1/2. Namely, these polynomials satisfy the Riemann Hypothesis.
-            </font></blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- END PUBLICATIONS -->
-
-
-<!-- PRESS -->
-  <section id=press class="home-section wg-accomplishments">
-    <div class=container>
-      <div class=row>
-        <div class="col-12 section-heading">
-          <h1>Press</h1>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <h3 class="header-pink">In the Media</h3>
-          <div class="card experience course">
-            <div class=card-body>
-              <div class=card-text>
-                • Harvard School of Engineering (2023): <a href="https://seas.harvard.edu/news/2023/05/senior-profile-catherine-yeo">Senior Profile: Catherine Yeo </a> <br>
-                • Antler Global (2023): <a href="https://www.antler.co/blog/50-creators-to-watch-2023">50 Creators to Watch in 2023 (featured alongside MrBeast, Emma Chamberlain, Li Jin)</a> <br>
-                <!-- • AsianFound (2022): <a href="https://www.asianfound.com/post/catherine-yeo">📕 Catherine Yeo: Author of "The Creator Revolution"</a> <br> -->
-                • Creators Lab (2022): <a href="https://alexha.substack.com/p/catherine-yeo-the-creator-revolution">Catherine Yeo: The Creator Revolution</a><br>
-                • Harvard School of Engineering (2022): <a href="https://www.seas.harvard.edu/news/2022/04/showcasing-future">Showcasing the Future: MS/MBA students, Roberts Family Fellows Present Startups at Technology Showcase</a> <br>
-                <!-- • Harvard School of Engineering (2021): <a href="https://www.seas.harvard.edu/news/2021/03/demystifying-vaccination-procedures">Demystifying Vaccination Procedures</a> <br> -->
-                • The Harvard Crimson (2021): <a href="https://www.thecrimson.com/article/2021/3/12/students-launch-vaccine-website/">Harvard College Students Build Website to Provide Americans with Covid Vaccine Information</a> <br>
-                • CSforALL (2021): <a href="https://medium.com/csforall-stories/31-days-of-the-next-women-in-tech-f6d8e85638f2">The Next Women in Tech</a> <br>
-                • Innoverge International (2021): <a href="https://innoverge.org/chatting-with-dr-korie-grayson-and-catherine-yeo-in-our-firesides/">Chatting With Dr. Korie Grayson and Catherine Yeo in Our Firesides</a> <br>
-                • Harvard School of Engineering (2020): <a href="https://www.seas.harvard.edu/news/2020/10/virtual-hackathon-yields-real-solutions">Virtual Hackathon Yields Real Solutions</a> <br>
-                • Stanford Institute for Human-Centered AI (2020): <a href="https://hai.stanford.edu/blog/ai4all-diversifying-future-artificial-intelligence">Diversifying the Future of Artificial Intelligence</a> <br>
-                • Pixel Journal (2020): <a href="https://www.pixeljournal.org/stories-blog/2020/8/24/exploring-ethical-technology-with-catherine-yeo">Exploring Ethical Technology with Catherine Yeo</a> <br>
-                <!-- • AI For Anyone (2020): <a href = "https://www.aiforanyone.org/post/fair-bytes-algorithmic-fairness-and-ethics-in-ai">Algorithmic Fairness & Ethics in AI </a> <br> -->
-                • Los Angeles Times (2020): <a href="https://highschool.latimes.com/california-school-of-the-arts/harvard-student-recounts-2020-school-year/">Recounting the 2020 School Year</a> <br>
-                • The Crimson (2019): <a href="https://www.thecrimson.com/article/2019/10/21/2019-hackharvard/">Hundreds of Students Spend Weekend Coding at HackHarvard’s Fifth Annual Hackathon</a> <br>
-                • Teen Vogue (2018): <a href = "https://www.teenvogue.com/story/catherine-yeo-pixelhacks-hackathon-interview">This 16-Year-Old Started Her Own Hackathon for Girls in STEM </a> <br>
-                <!-- • Mogul (2017): <a href = "https://onmogul.com/stories/50-high-schoolers-you-need-to-know">50 High School Students You Need to Know About </a> <br> -->
-                <!-- • Expii (2016): <a href = "http://blog.expii.com/2016/05/03/top-score-tuesday-catherine-yeo/">Top Score Tuesday: Catherine Yeo </a>  -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <h3 class="header-pink">Awards</h3>
-          <div class="card experience course">
-            <div class=card-body>
-              <div class=card-text>
-                • Slavin Fellowship </a> (2023) <br>
-                • We Are Family Foundation's Three Dot Dash <a href="https://www.wearefamilyfoundation.org/gtl-2021/catherine-yeo">Global Teen Leader</a> (2021) <br>
-                • Harvard Business School & School of Engineering Roberts Family Technology Innovation Fellowship (2021) <br>
-                • Pear VC Garage Fellowship (2020) <br>
-                • SOMA Capital Fellowship (2020) <br>
-                • Contrary Talent Fellowship (2020) <br>
-                • Harvard CS Special Commendation for Extraordinary Teaching (2020) <br>
-                • Rewriting the Code Fellowship (2020) <br>
-                • NCWIT Change Leader Scholarship (2020)<br>
-                • Palantir Women in Technology Scholarship (2019)<br>
-                • Raytheon-FIRST Robotics Scholarship (2018)<br>
-                • AI4ALL Future Leader in AI Research Fellowship (2018, 2019)<br>
-                • She++ #include Fellow (2017)<br>
-                • Spirit of Ramanujan Global Math Talent Search Fellowship (2017)<br>
-                • Apple WWDC Scholarship (2016)<br>
-                • NCWIT Aspirations in Computing Bay Area Winner (2016)<br>
-                • NCWIT Aspirations in Computing National Honorable Mention (2015-17)
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class=row>
-        <div class="col-12 section-heading">
-          <h3 class="header-pink">Speaking Highlights</h3>
-        </div>
-      </div>
-
-      <div class="row"> 
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/panelist.JPG" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Panelist & Public Speaker</h4>
-                <p>Given 40+ talks, panels, & podcast interviews about my book, entrepreneurship, creator economy, AI, and my story</p> 
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Book</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Startups/VC</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">AI Ethics</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Creator Economy</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Personal Journey</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/asianhustlenetwork.jpg" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Asian Hustle Network</h4>
-                <p>Invited speaker about my personal journey, my book, and what the hustle spirit means at age 20 [<a href="https://www.ahnpodcast.com/podcast/catherine-yeo-the-creator-revolution-179/" class="label-red">Podcast Episode</a>]</p>
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Personal Journey</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Book</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Creator Economy</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/influencermarketinglab.jpeg" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Influencer Marketing Lab</h4>
-                <p>Invited speaker about my book, digital creators today, and what's next for the creator economy [<a href="https://sabguthrie.info/catherine-yeo-discusses-book-creator-revolution/" class="label-blue">Podcast Episode</a>]</p>
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Book</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Creator Economy</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Startups/VC</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-      </div>
-
-      <br>
-
-
-
-      <div class="row"> 
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/asianfound.jpeg" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>AsianFound</h4>
-                <p>Named Gen Z Creator of the Week. Discussed book takeaways, the writing + marketing process, & Asian American representation <a href="https://www.asianfound.com/post/catherine-yeo" class="label-yellow">[Article]</a></p> 
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Book</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Personal Journey</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Creator Economy</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/networkcap.jpg" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Network Capital</h4>
-                <p>Invited speaker about my book, the creator economy, and what successful community building looks like for creators</p> 
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Book</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Creator Economy</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-
-      
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/digitaledventures.png" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Digital EdVentures</h4>
-                <p>Invited keynote speaker for student conference set in the Philippines about "TikTok & The Creator Revolution" </p> 
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Book</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Creator Economy</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-      </div>
-
-      <br>
-      <div class="row"> 
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/girlscodedata.png" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>GirlsCodeData</h4>
-                <p>Invited keynote speaker on fairness and ethics in AI at a data science conference for 300+ middle & high school women</p> 
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">AI Ethics</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/deltax.png" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Delta X Podcast</h4>
-                <p>Invited podcast speaker about ethical algorithms & my personal journey in tech [<a href="https://open.spotify.com/episode/6evxwAZpeB3bENHqZyXDEt" class="label-pink">Podcast Episode</a>] [<a href="https://newsletter.deltaxpod.com/p/ethical-ai-and-debiasing-our-algorithms" class="label-purple">Newsletter Recap</a>]</p>
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">AI Ethics</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Personal Journey</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-
-        <!-- START 1 card -->
-        <div class="col-lg-4 col-md-4 col-sm-12">
-          <div class="card-simple card-project">
-            <div>
-              <img src="img/press/mlengineered.jpg" class=article-banner>
-              <div style="font-size:80%">
-                <br>
-                <h4>Machine Learning Engineered</h4>
-                <p>Invited podcast speaker on my journey in tech & AI fairness [<a href="https://www.mlengineered.com/episode/catherine-yeo" class="label-blue">Podcast Episode</a>]</p> 
-              </div>
-              <div class="btn-links">
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">AI Ethics</div>
-                <div class="btn btn-outline-primary my-1 mr-1 btn-sm">Research</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END 1 card -->
-    </div>
-
-  </div>
-</section>
-<!-- END OF PRESS -->
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
-
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-    <script src="academic.js"></script>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="Catherine Yeo" content="">
+		<!-- <meta name="description" content="Creator, builder, and investor studying Computer Science and English at Harvard University. Author of The Creator Revolution."> -->
+		<title>Catherine Yeo</title>
+
+		<!-- <link rel="icon" type="image/png" href="/img/icon.png"> -->
+		<link rel="apple-touch-icon" type="image/png" href="/img/profile2022.png">
+		<link rel="canonical" href="https://catherinehyeo.com">
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://catherinehyeo.com">
+		<meta property="og:title" content="Catherine Yeo">
+		<!-- <meta property="og:description" content="Catherine is an engineer, writer, comedian, and an intense introvert."> -->
+		<meta property="og:image" content="/img/hold-book.jpg">
+		
+		<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel=stylesheet>
+
+		<link rel=stylesheet type=text/css media=screen href=normalize.css>
+		<link rel=stylesheet type=text/css media=screen href=main.css>
+		<link rel=stylesheet type=text/css href=custom.css>
+		<script src=https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js></script>
+	</head>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWCC3M5PQN"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-WWCC3M5PQN');
+	</script>
+
+	<body>
+		<div class="container wrapper">
+		<div class=header>
+			<base href=https://catherinehyeo.com/>
+			<div class=site-description>
+				<h1 class=site-title>Catherine Yeo</h1>
+				<nav class="nav social">
+					<ul class=flat>
+						<a href=https://linkedin.com/in/catherine-yeo title=Linkedin><i data-feather=linkedin></i></a>
+						<a href=https://twitter.com/intent/follow?screen_name=catherinehyeo title=Twitter><i data-feather=twitter></i></a>
+						<a href=mailto:catherinehyeo[AT]gmail.com title=Email><i data-feather=mail></i></a>
+					</ul>
+				</nav>
+			</div>
+			<nav class=nav>
+				<ul class=flat>
+					<li><a href=/>About</a></li>
+					<li><a href=/writing>Writing</a></li>
+					<li><a href=/projects>Projects</a></li>
+					<li><a href=/creator>Book</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="intro">
+			<p>Catherine is an engineer, writer, comic, and an intense introvert who dies a little inside every time someone calls her an extrovert.</p>
+
+			<p><b>Currently:</b> <br>
+				👩🏻‍💻 software engineer at <a href="https://www.warp.dev/" class="label-blue">Warp</a>, the modern terminal <br>
+				✍️ <a href=/writing class="label-yellow">writing</a> personal, satirical, and technical essays <br>
+				🎤 performing stand-up comedy <!-- in NYC  -->
+			</p>
+
+			<p><b>Previously:</b> <br>
+				🚀 <a href=/projects class="label-orange">built</a> AI products at Disney, IBM Research, and MIT + co-founded startups in consumer social and AI ethics advocacy <br>
+				💫 wrote an embarrassing amount of Star Wars fanfiction, sold writing & art as a Tumblr creator (400K+ audience), and published nonfiction book <a href=/creator class="label-purple"><i>The Creator Revolution</i></a> (New Degree Press, 2022) <br>
+				🎓 graduated from Harvard with a Bachelor's in Computer Science + English, Master's in Computer Science, and <a href="/harvard" class="label-yellow">not enough sleep</a>
+	      		<!-- 📝 cemented women's stories in history: 15 (& counting) <a href="https://twitter.com/catherinehyeo/status/1368613887432486918" class="label-yellow">Wikipedia biographies</a> created -->
+			</p>
+		</div>
+
+		<div class="recent-posts section">
+			<h2 class=section-header>Popular Pieces</h2>
+			<div class=posts>
+				<div class=post>
+					<div class=meta>2023.05.17 • HARVARD MAGAZINE</div>
+					<a class=title href="https://www.harvardmagazine.com/2023/05/time-to-stand-up">Time to Stand Up</a> &mdash;
+					<span class=description>For an Asian American woman, performing comedy is about much more than jokes.</span>
+				</div>
+				<div class=post>
+					<div class=meta>2020.07.16 • TOWARDS DATA SCIENCE</div>
+					<a class=title href="https://towardsdatascience.com/machine-learnings-obsession-with-kids-tv-show-characters-728edfb43b3c">Machine Learning’s Obsession with Kids’ TV Show Characters</a> &mdash;
+					<span class=description>Elmo, Bert, and Marge (Simpson) aren’t just your favorite TV characters growing up. They’re also machine learning & NLP models.</span>
+				</div>
+				<div class=post>
+					<div class=meta>2022.02.04 • SUBSTACK</div>
+					<a class=title href="https://cyeo.substack.com/p/wikipedia-struggle-creators">Wikipedia's Struggle with Creators</a> &mdash;
+					<span class=description>Notability, as its own notion, is inherently subjective. So where do creators fit in?</span>
+				</div>
+			</div>
+		</div>
+
+		<iframe src="https://cyeo.substack.com/embed" class="iframe-responsive"  height="320" style="border:1px solid #EEE; background:white; width:100%" frameborder="0" scrolling="no"></iframe>
+
+		<div class="footer wrapper">
+			<nav class=nav>
+				<div>Copyright © 2023 Catherine Yeo | Modified from <a href=https://github.com/vividvilla/ezhil>Ezhil theme</a></div>
+			</nav>
+		</div>
+
+		
+		<script>feather.replace()</script>
+	</body>
 </html>
-
-

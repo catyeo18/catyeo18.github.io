@@ -530,7 +530,7 @@ table th, table td {
 /* book page */
 .quote {
   margin-top: 0;
-  /*margin-bottom: 1rem;*/
+  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 /* phone */
