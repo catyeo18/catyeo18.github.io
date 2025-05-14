@@ -19,7 +19,8 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: #4caf50;
   color: #ffffff;
 }
 
