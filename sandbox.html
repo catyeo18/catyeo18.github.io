@@ -147,16 +147,16 @@
     </div>
 
     <script>
-        // Add toggle functionality for collapsible sections
         document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.collapsible');
-            
-            sections.forEach(section => {
-                const title = section.querySelector('.section-title');
-                const content = section.querySelector('.section-content');
-                
-                title.addEventListener('click', () => {
-                    section.classList.toggle('open');
+            var collapsibles = document.querySelectorAll('.collapsible');
+
+            collapsibles.forEach(function(collapsible) {
+                var title = collapsible.querySelector('.section-title');
+                var content = collapsible.querySelector('.section-content');
+
+                title.addEventListener('click', function() {
+                    title.classList.toggle('open');
+                    content.classList.toggle('closed');
                 });
             });
         });

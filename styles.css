@@ -44,6 +44,19 @@ nav {
   display: flex;
   gap: 1rem;
   align-items: center;
+  height: 24px; /* Set a consistent height for the nav */
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+nav a svg {
+  vertical-align: middle;
 }
 
 nav a:hover svg {
