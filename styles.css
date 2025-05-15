@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  max-width: 34rem;
+  max-width: 42rem;
   margin: 0 auto;
   padding: 3rem 1rem;
 }
@@ -50,12 +50,13 @@ nav a:hover svg {
   stroke: #ffffff;
 }
 
-.underline {
-  text-decoration: underline;
+.green-text {
+  color: #4caf50;
 }
 
-.subtle-link {
+.green-link {
   color: #4caf50;
+  font-weight: 500;
 }
 
 .collapsible {
