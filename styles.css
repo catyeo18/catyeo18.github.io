@@ -44,7 +44,7 @@ nav {
   display: flex;
   gap: 1rem;
   align-items: center;
-  height: 24px; /* Set a consistent height for the nav */
+  height: 24px;
 }
 
 nav a {
